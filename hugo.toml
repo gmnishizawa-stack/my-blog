@@ -1,25 +1,21 @@
 baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
-title = '私のブログ'
-theme = 'PaperMod'
+title = 'Cloudflareとは'
+theme = 'clarity'
 
 [params]
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
+  author = 'Nishizawa'
+  description = '技術情報とグラフを中心としたブログ'
+  
+[params.sidebar]
+  enable = true
 
-[[menu.main]]
-  identifier = "posts"
-  name = "投稿"
-  url = "/posts/"
-  weight = 10
-
-[[menu.main]]
-  identifier = "tags"
-  name = "タグ"
-  url = "/tags/"
-  weight = 20
+[menu]
+  [[menu.main]]
+    name = "ホーム"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "投稿"
+    url = "/post/"
+    weight = 2
