@@ -1,4 +1,4 @@
-baseURL = 'https://my-blog-dz3.pages.dev/'
+baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
 title = '私のブログ'
 theme = 'PaperMod'
