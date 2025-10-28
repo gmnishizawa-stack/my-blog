@@ -2,68 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nishizawa Pages</title>
-    <link>https://nishizawa.pages.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Nishizawa Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare Pages &#43; Hugoでブログを構築した記録</title>
-      <link>https://nishizawa.pages.dev/post/blog-setup/</link>
+      <link>http://localhost:1313/post/blog-setup/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/blog-setup/</guid>
+      <guid>http://localhost:1313/post/blog-setup/</guid>
       <description>
         
           
-            &lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、 &lt;br&gt;
-Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い
-「Cloudflare Pages」を使ってみることにしました。&lt;br&gt;
-Hugoにはあまりこだわりがなく、Claudeのオススメに従いました。&lt;/p&gt;
-&lt;p&gt;本来ならそこそこ難しい作業かと思いますが、Claudeがあるのでいけるだろう、と思ってやったら出来ました。
-ということでこのブログを構築するまでの作業記録をまとめました。&lt;br&gt;
-AIと一緒に進めるのがよいかと思いますので細かい手順までは書きませんがCloudflareアカウントをお持ちでしたら30分あればできると思います。&lt;/p&gt;
-&lt;h2 id=&#34;使用した技術&#34;&gt;使用した技術&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;静的サイトジェネレーター&lt;/strong&gt;: Hugo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;テーマ&lt;/strong&gt;: Clarity&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;バージョン管理&lt;/strong&gt;: Git / GitHub&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ホスティング&lt;/strong&gt;: Cloudflare Pages&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;URL&lt;/strong&gt;: &lt;a href=&#34;https://nishizawa.pages.dev/&#34;&gt;https://nishizawa.pages.dev/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;アシスタント&lt;/strong&gt;: Claude (Anthropic) ← &lt;strong&gt;重要!&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;構築手順&#34;&gt;構築手順&lt;/h2&gt;
-&lt;h3 id=&#34;1-環境構築&#34;&gt;1. 環境構築&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hugoのインストール (winget)&lt;/li&gt;
-&lt;li&gt;Gitのインストール&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-ブログサイト作成&#34;&gt;2. ブログサイト作成&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hugo new site my-blog&lt;/code&gt; でプロジェクト作成&lt;/li&gt;
-&lt;li&gt;テーマを3回変更 (Ananke → PaperMod → Clarity)&lt;/li&gt;
-&lt;li&gt;設定ファイル (&lt;code&gt;hugo.toml&lt;/code&gt;) を編集&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;3-githubにアップロード&#34;&gt;3. GitHubにアップロード&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ローカルリポジトリ初期化&lt;/li&gt;
-&lt;li&gt;GitHubにリモートリポジトリ作成&lt;/li&gt;
-&lt;li&gt;プッシュ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;4-cloudflare-pagesでデプロイ&#34;&gt;4. Cloudflare Pagesでデプロイ&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHubと連携&lt;/li&gt;
-&lt;li&gt;ビルド設定 (Hugo)&lt;/li&gt;
-&lt;li&gt;自動デプロイ設定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;5-url確保&#34;&gt;5. URL確保&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;最初は &lt;code&gt;my-blog-dz3.pages.dev&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;後で &lt;code&gt;nishizawa.pages.dev&lt;/code&gt; に変更&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;所感&#34;&gt;所感&lt;/h2&gt;
-&lt;p&gt;Claudeと一緒だったからすべて順調でした。&lt;/p&gt;
+            今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い「Cloudflare Pages」を使ってみることにしました。  ...
           
           
         
@@ -72,15 +25,14 @@ AIと一緒に進めるのがよいかと思いますので細かい手順まで
     
     <item>
       <title>最初の記事</title>
-      <link>https://nishizawa.pages.dev/post/my-first-post/</link>
+      <link>http://localhost:1313/post/my-first-post/</link>
       <pubDate>Mon, 27 Oct 2025 13:41:43 +0900</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/my-first-post/</guid>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
       <description>
         
           
             &lt;p&gt;これは私の最初のブログ記事です!&lt;/p&gt;
-&lt;p&gt;Hugoを使ってブログを作りました。&lt;/p&gt;
           
           
         

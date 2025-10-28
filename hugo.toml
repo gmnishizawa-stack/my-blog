@@ -2,13 +2,24 @@ baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
 title = 'Nishizawa Pages'
 theme = 'clarity'
+hasCJKLanguage = true  # ← この行を追加（日本語対応）
+summaryLength = 50     # ← もっと小さい数字に変更
 
 [params]
-  author = 'Nishizawa'
-  description = 'Cloudflareに関する情報を中心としたメモ'
+  introDescription = """
+  Cloudflareの情報発信をしています。
+  エンジニアではない視点から、技術を分かりやすく伝えることを目指しています。
+  """
   
 [params.sidebar]
   enable = true
+  
+[params.author]
+  name = "Nishizawa"
+  photo = "/images/avatar.jpg"
+  
+[params.social]
+  twitter = "ctO5lSnpzpWNOz5"
 
 [menu]
   [[menu.main]]
