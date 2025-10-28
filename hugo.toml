@@ -1,11 +1,11 @@
 baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
-title = 'Cloudflareとは'
+title = 'Nishizawa Pages'
 theme = 'clarity'
 
 [params]
   author = 'Nishizawa'
-  description = '技術情報とグラフを中心としたブログ'
+  description = 'Cloudflareに関する情報を中心としたメモ'
   
 [params.sidebar]
   enable = true
