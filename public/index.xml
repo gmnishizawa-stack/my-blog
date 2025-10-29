@@ -6,7 +6,23 @@
     <description>Recent content on Nishizawa Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare（クラウドフレア）とは？</title>
+      <link>http://localhost:1313/post/what-is-cloudflare/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/what-is-cloudflare/</guid>
+      <description>
+        
+          
+            インターネットを使っている人なら誰もが知らず知らずのうちにお世話になっている「Cloudflare」。ウェブサイトを速く、安全にする縁の下の力持ちです。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Cloudflare Pages &#43; Hugoでブログを構築した記録</title>
       <link>http://localhost:1313/post/blog-setup/</link>

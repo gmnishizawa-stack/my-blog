@@ -108,7 +108,7 @@
     <span class="post_date">
       Oct 28, 2025	  
     </span>
-    <span class="post_time"> · 2 min read</span>
+    <span class="post_time"> · 3 min read</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
@@ -145,26 +145,26 @@
   </div>
 
     <div class="post_body"><h2 id="はじめに">はじめに</h2>
-<p>今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、 <br>
-Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い
+<p>これから情報発信をするのに、ノートとかASPサービスも検討したのですが、 <br>
+Cloudflare情報をメインに扱うことを考えると、Cloudflareのテクノロジーが使えるもので組んだほうがいいかな、と思い
 「Cloudflare Pages」を使ってみることにしました。<br>
-Hugoにはあまりこだわりがなく、Claudeのオススメに従いました。
-本来ならそこそこ難しい作業かと思いますが、Claudeがあるのでいけるだろう、と思ってやったら出来ました。
+Hugoにはあまりこだわりがなく、Claudeのオススメに従いました。<br>
+本来ならそこそこ難しい作業かと思いますが、Claudeがあるのでいけるだろう、と思ってやったら出来ました。<br>
 ということでこのブログを構築するまでの作業記録をまとめました。<br>
-AIと一緒に進めるのがよいかと思いますので細かい手順までは書きませんがCloudflareアカウントをお持ちでしたら30分あればできると思います。</p>
+AIと一緒に進めれば手取り足取り教えてくれるので細かい手順までは書きません（Cloudflareアカウントをお持ちでしたら30分あればできると思います）が<br>
+ざっくりどういう形で導入したのかという話をします。</p>
 <h2 id="使用した技術">使用した技術</h2>
 <ul>
 <li><strong>静的サイトジェネレーター</strong>: Hugo</li>
 <li><strong>テーマ</strong>: Clarity</li>
 <li><strong>バージョン管理</strong>: Git / GitHub</li>
 <li><strong>ホスティング</strong>: Cloudflare Pages</li>
-<li><strong>URL</strong>: <a href="https://nishizawa.pages.dev/">https://nishizawa.pages.dev/</a></li>
 <li><strong>アシスタント</strong>: Claude (Anthropic) ← <strong>重要!</strong></li>
 </ul>
 <h2 id="構築手順">構築手順</h2>
 <h3 id="1-環境構築">1. 環境構築</h3>
 <ul>
-<li>Hugoのインストール (winget)</li>
+<li>Hugoのインストール</li>
 <li>Gitのインストール</li>
 </ul>
 <h3 id="2-ブログサイト作成">2. ブログサイト作成</h3>
@@ -192,10 +192,11 @@ AIと一緒に進めるのがよいかと思いますので細かい手順まで
 </ul>
 <h2 id="所感">所感</h2>
 <p>Claudeと一緒だったからすべて順調でした。</p>
-<p>テーマ（ブログデザイン）を何回か変更したので余計に時間掛かりましたがそれでも30分くらいでした。<br>
-pagesもHugoもGitもほぼ初めてでしたが、ただ言われたとおりに操作をしていくうちに「ああ、こういうものか」という感じでわかっていきます。<br>
-普段慣れないコマンドラインの操作もコピペだけでどんどん作業が進みました。<br>
-ドメイン名は「pages.dev」のままでいこうと思います、CloudflarePagesで作りました感をアピールして。<br>
+<p>正直、エンジニアの方でなくても誰でもできると思います。<br>
+テーマ（ブログデザイン）を何回か変更したので余計に時間掛かりましたがそれでも30分くらいでした。<br>
+pagesもHugoもGitもほぼ初めてでしたが、AIに言われたとおりに操作をしていくうちに「ああ、こういうものか」という感じでわかっていきます。<br>
+普段慣れないコマンドラインの操作（ほぼコピペ）もどんどん作業が進みました。<br>
+ドメイン名は独自ドメインをとらず、CloudflarePagesで作りました感をアピールして「pages.dev」のままでいこうと思います。<br>
 CloudflarePagesで構築したので、なんといっても無料でできるのがイイところ（もちろん広告もありません）。</p>
 <p>今日時点（2025年10月27日）ではシンプルな構造ですが今後はサイドメニューは増築していきたいです。</p>
 <h2 id="参考リンク">参考リンク</h2>
@@ -235,6 +236,9 @@ CloudflarePagesで構築したので、なんといっても無料でできる�
     
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="http://localhost:1313/post/what-is-cloudflare/" class="nav-link" title="Cloudflare（クラウドフレア）とは？">Cloudflare（クラウドフレア）とは？</a>
+      </li>
       <li>
         <a href="http://localhost:1313/post/blog-setup/" class="nav-link" title="Cloudflare Pages &#43; Hugoでブログを構築した記録">Cloudflare Pages + Hugoでブログを構築した記録</a>
       </li>
