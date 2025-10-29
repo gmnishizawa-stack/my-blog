@@ -7,8 +7,7 @@ summaryLength = 50     # ← もっと小さい数字に変更
 
 [params]
   introDescription = """
-  Cloudflareの情報発信をしています。
-  エンジニアではない視点から、技術を分かりやすく伝えることを目指しています。
+  Cloudflareパートナー企業の一員です。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。
   """
   
 [params.sidebar]
