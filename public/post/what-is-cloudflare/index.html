@@ -161,21 +161,23 @@
 <h3 id="役割ウェブサイトの表示を超高速にする">役割①：ウェブサイトの表示を「超高速」にする</h3>
 <p>ウェブサイトが速く表示されることは、ユーザーの満足度・コンバージョン（売り上げ）に直結します。<br>
 Cloudflareはこれを実現するための強力な仕組みを持っています。</p>
-<p>なぜサイトが速くなるの？：CDN（コンテンツ・デリバリー・ネットワーク）の仕組み</p>
+<p><strong>なぜサイトが速くなるの？：CDN（コンテンツ・デリバリー・ネットワーク）の仕組み</strong></p>
 <p>遠い場所にあるサーバーからデータを読み込むよりも、近くの場所から読み込む方が速いですよね？</p>
 <p>Cloudflareは、あなたのウェブサイトの画像やCSSなどのデータの一部を、世界中の中継地点（データセンター）にコピーして保持しています。これを「キャッシュ」と呼びます。</p>
 <p>これにより、東京のユーザーがアメリカのサーバーにあるサイトにアクセスする場合でも、東京に一番近いCloudflareの中継地点からデータを受け取ることができるため、体感速度が劇的に向上します。<br>
 これがCDN（Contents Delivery Network）の基本的な仕組みです。</p>
 <h3 id="役割悪意のあるサイバー攻撃からサイトを徹底的に守る">役割②：悪意のあるサイバー攻撃からサイトを「徹底的に守る」</h3>
 <p>インターネットの世界には、ウェブサイトをダウンさせたり、データを盗もうとする悪意のある攻撃が常に存在します。Cloudflareは、この攻撃を水際で食い止めます。</p>
-<p>サイバー攻撃（DDoS攻撃など）からどう守る？</p>
+<p><strong>サイバー攻撃（DDoS攻撃など）からどう守る？</strong></p>
 <p>Cloudflareが最も得意とするのが、DDoS攻撃（ディードスこうげき）と呼ばれる、大量のアクセスを送りつけてサーバーをパンクさせる攻撃の防御です。<br>
 Cloudflareは、世界中に広がる巨大なネットワークで、これらの大量のアクセスを分散・吸収し、本当にサイトを見たい人だけのアクセスをあなたのサーバーに届けます。まさに「門番」として、怪しいアクセスをブロックする役割を果たします。</p>
 <h3 id="役割新しいインターネットの場所を提供する開発者向けサービス">役割③：新しいインターネットの「場所」を提供する（開発者向けサービス）</h3>
 <p>最近のCloudflareは、ウェブサイトを守るだけでなく、新しいインターネットサービスを開発するためのプラットフォームとしても注目されています。</p>
 <p><strong>プログラムを動かす場所が変わった！</strong></p>
 <p>従来、ウェブサービスを作るには、どこかに「サーバー」というコンピューターを用意して、そこでプログラムを動かす必要がありました。</p>
-<p>しかしCloudflareの「Cloudflare Workers」というサービスを使うと、先ほど説明した世界中の中継地点（エッジ）でプログラムを直接動かすことができます。これを「エッジコンピューティング」と呼びます。</p>
+<p>しかしCloudflareの「Cloudflare Workers」というサービスを使うと、先ほど説明した世界中の中継地点（エッジ）でプログラムを直接動かすことができます。<br>
+これを「エッジコンピューティング」と呼びます。<br>
+このブログもサーバーがない（サーバレス）、エッジコンピューティングで動いています。</p>
 <p>ユーザーに最も近い場所で処理が行えるため、より応答速度の速い、最先端のアプリケーション開発が可能になっています。</p>
 <h3 id="役割企業のネットワークをゼロトラストで守る">役割④：企業のネットワークを「ゼロトラスト」で守る</h3>
 <p>最近、企業のセキュリティで注目されているのが「ゼロトラスト」という考え方です。</p>
@@ -230,7 +232,7 @@ Cloudflareの技術によって、誰もが安心してインターネットを�
         </div>
       <div class="author_bio">
         Cloudflareパートナー企業で日々Cloudflareの導入・運用のサポートをしています。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。<br>
-<a href="https://twitter.com/ctO5lSnpzpWNOz5">ご連絡はX（旧Twitter）からどうぞ</a>
+<a href="https://twitter.com/ctO5lSnpzpWNOz5">ご連絡はこちら（Twitter）からどうぞ</a>
       </div>
       <a href='http://localhost:1313/about/' class="button mt-1" role="button" title='Read More'>Read More</a>
 
@@ -350,6 +352,6 @@ Cloudflareの技術によって、誰もが安心してインターネットを�
   </div>
 </footer>
 
-<script type="text/javascript" src="http://localhost:1313/en/js/bundle.f0afb782c48ecaf0ffd6a32b0a875bab561e228e93e59bd0026f5f9c1b2e60843ff8f7fed387dc85d7acd5801787d2b7e09978ce6748ee2d9793a248235143df.js" integrity="sha512-8K&#43;3gsSOyvD/1qMrCodbq1YeIo6T5ZvQAm9fnBsuYIQ/&#43;Pf&#43;04fchdes1YAXh9K34Jl4zmdI7i2Xk6JII1FD3w==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://localhost:1313/en/js/bundle.f0afb782c48ecaf0ffd6a32b0a875bab561e228e93e59bd0026f5f9c1b2e60843ff8f7fed387dc85d7acd5801787d2b7e09978ce6748ee2d9793a248235143df.js" integrity="sha512-8K&#43;3gsSOyvD/1qMrCodbq1YeIo6T5ZvQAm9fnBsuYIQ/&#43;Pf&#43;04fchdes1YAXh9K34Jl4zmdI7i2Xk6JII1FD3w==" crossorigin="anonymous"></script><script type="text/javascript" src="/js/analytics.js"></script>
   </body>
 </html>
