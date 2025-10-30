@@ -7,7 +7,8 @@ summaryLength = 50     # ← もっと小さい数字に変更
 
 [params]
   introDescription = """
-  Cloudflareパートナー企業の一員です。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。
+  Cloudflareパートナー企業で日々Cloudflareの導入・運用のサポートをしています。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。  
+[ご連絡はX（旧Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
   """
   
 [params.sidebar]
@@ -17,8 +18,9 @@ summaryLength = 50     # ← もっと小さい数字に変更
   name = "Nishizawa"
   photo = "/images/avatar.jpg"
   
-[params.social]
-  twitter = "ctO5lSnpzpWNOz5"
+[[params.author.social]]
+  name = "twitter"
+  url = "https://twitter.com/ctO5lSnpzpWNOz5"
 
 [menu]
   [[menu.main]]
