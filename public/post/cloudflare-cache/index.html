@@ -4,13 +4,12 @@
   lang="en"
   data-figures=""
   
-    class="home"
+    class="page"
   
   
   >
-  <head>
-	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Nishizawa Pages</title>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Cloudflare（クラウドフレア）のキャッシュを理解する | Nishizawa Pages</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -19,23 +18,22 @@
 
 <meta property="og:locale" content="en" />
 
-<meta property="og:type" content="website">
-<meta name="description" content="" />
+<meta property="og:type" content="article">
+<meta name="description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Nishizawa Pages" />
+<meta name="twitter:title" content="Cloudflare（クラウドフレア）のキャッシュを理解する" />
 <meta name="twitter:image" content="http://localhost:1313/"/>
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:title" content="Nishizawa Pages" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="http://localhost:1313/post/cloudflare-cache/" />
+<meta property="og:title" content="Cloudflare（クラウドフレア）のキャッシュを理解する" />
+<meta property="og:description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。" />
 <meta property="og:image" content="http://localhost:1313/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Nishizawa Pages" />
+<link rel="canonical" href="http://localhost:1313/post/cloudflare-cache/">
 
 
 
@@ -78,7 +76,7 @@
       
         
 
-  <div class="nav_parent nav_active">
+  <div class="nav_parent">
     <a href="http://localhost:1313/" class="nav_item" title="ホーム">ホーム </a>
   </div>
   <div class="nav_parent">
@@ -97,21 +95,10 @@
 </header>
 
     <main>
-
   
-
-
-
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="http://localhost:1313/post/cloudflare-cache/" title="Cloudflare（クラウドフレア）のキャッシュを理解する">Cloudflare（クラウドフレア）のキャッシュを理解する</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">Cloudflare（クラウドフレア）のキャッシュを理解する</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -157,219 +144,240 @@
   </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。</p>
-          
-          <br>
-          <a href="http://localhost:1313/post/cloudflare-cache/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class="post_body"><p>「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。<br>
+この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。</p>
+<h2 id="キャッシュの基礎">キャッシュの基礎</h2>
+<h3 id="キャッシュとは何かどういうメリットがあるのか">キャッシュとは何か、どういうメリットがあるのか</h3>
+<p>キャッシュとは、一度取得したデータを「手元に保存しておく」仕組みのことです。</p>
+<p>例えば、あなたのウェブサイトに画像があるとします。<br>
+訪問者がその画像を見るたびに、毎回ウェブサーバーからデータをとりに行くような動きになっています。</p>
+<p>Cloudflareがあると、画像をCloudflareのサーバーにキャッシュ（保存）しておいて、次の訪問者には「保存してあったもの」を素早く渡せます。<br>
+このような動作をするものをCDNとよびます。</p>
+<p>Cloudflareのサーバをエッジサーバ、ウェブサーバをオリジンサーバと呼びます。</p>
+<p><strong>ここがポイント</strong></p>
+<ul>
+<li><strong>表示速度が速くなる</strong> - 訪問者に近い場所から配信できる</li>
+<li><strong>サーバー負荷が減る</strong> - オリジンサーバーへのリクエストが減り安定する</li>
+<li><strong>帯域幅の節約</strong> - オリジンからの転送量が減る</li>
+<li><strong>コスト削減</strong> - サーバーリソースを節約できる</li>
+</ul>
+<p>あまりピンとこないかもしれませんが、大量のアクセス集中が発生したときを考えると、なんとなくわかるんじゃないかなと思います。</p>
+<h3 id="cloudflareはドメイン単位で動作する">Cloudflareはドメイン単位で動作する</h3>
+<p>重要なポイントとして、<strong>Cloudflareはドメイン単位で導入する</strong>サービスです。</p>
+<p>例えば、<code>example.com</code>にCloudflareを導入した場合:</p>
+<ul>
+<li>✅ <code>https://example.com/image.jpg</code> → キャッシュされる</li>
+<li>❌ <code>https://other-site.com/image.jpg</code> → キャッシュされない</li>
+</ul>
+<p>つまり、ページ内で外部サイトの画像やCSSを読み込んでいる場合、それらは<strong>Cloudflareのキャッシュ対象外</strong>になります。</p>
+<p>自分のドメインのリソースだけがキャッシュの恩恵を受けられる、ということを覚えておきましょう。</p>
+<h3 id="cdnとキャッシュは同じ意味">CDNとキャッシュは同じ意味?</h3>
+<p>よく混同されますが、<strong>違います</strong>。</p>
+<p><strong>CDN (Content Delivery Network)</strong></p>
+<ul>
+<li>世界中に配置されたサーバーネットワークのこと</li>
+<li>Cloudflareは300以上の都市にサーバーを持つCDN</li>
+</ul>
+<p><strong>キャッシュ</strong></p>
+<ul>
+<li>CDNが「データを保存しておく」機能</li>
+<li>CDNの機能の一つ</li>
+</ul>
+<p>つまり、<strong>CDNはネットワーク、キャッシュはその中で動く機能</strong>です。</p>
+<h3 id="ブラウザキャッシュとcdnキャッシュの違い">ブラウザキャッシュとCDNキャッシュの違い</h3>
+<p>キャッシュには大きく2種類あります。</p>
+<p><strong>ブラウザキャッシュ</strong></p>
+<ul>
+<li>訪問者のパソコン（ブラウザ）に保存される</li>
+<li>その人だけが恩恵を受ける</li>
+</ul>
+<p><strong>CDNキャッシュ（Cloudflareのキャッシュ）</strong></p>
+<ul>
+<li>Cloudflareのサーバーに保存される</li>
+<li>全ての訪問者が恩恵を受ける</li>
+</ul>
+<p>一言でキャッシュ、といってしまって混同しないように注意したいところです。</p>
+<h2 id="cloudflareのキャッシュの仕組み">Cloudflareのキャッシュの仕組み</h2>
+<h3 id="キャッシュはurlベースで行われる">キャッシュはURLベースで行われる</h3>
+<p>Cloudflareは<strong>URL単位でキャッシュ</strong>を管理します。</p>
+<p><strong>例:</strong></p>
+<ul>
+<li><code>https://example.com/image.jpg</code> → キャッシュ1</li>
+<li><code>https://example.com/image.jpg?v=2</code> → キャッシュ2（別物）</li>
+<li><code>https://example.com/IMAGE.jpg</code> → キャッシュ3（大文字小文字も区別）</li>
+</ul>
+<p>つまり、URLが少しでも違えば<strong>別のキャッシュ</strong>として扱われます。</p>
+<p>これは便利な反面、注意も必要です。例えば、クエリパラメータ（<code>?v=1</code>など）を安易に使うと、同じ画像なのにキャッシュが分散してしまいます。</p>
+<h3 id="cloudflareでのキャッシュ対象拡張子">Cloudflareでのキャッシュ対象拡張子</h3>
+<p>Cloudflareは<strong>デフォルトで静的ファイルのみ</strong>をキャッシュします。</p>
+<p><strong>デフォルトでキャッシュされる拡張子（例）</strong></p>
+<ul>
+<li><strong>画像</strong>: <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.gif</code>, <code>.webp</code>, <code>.svg</code>, <code>.ico</code></li>
+<li><strong>スタイル/スクリプト</strong>: <code>.css</code>, <code>.js</code></li>
+<li><strong>フォント</strong>: <code>.woff</code>, <code>.woff2</code>, <code>.ttf</code>, <code>.eot</code></li>
+<li><strong>ドキュメント</strong>: <code>.pdf</code></li>
+<li><strong>その他</strong>: <code>.xml</code>, <code>.json</code>, <code>.txt</code></li>
+</ul>
+<p><strong>キャッシュされない拡張子（例）</strong></p>
+<ul>
+<li><code>.html</code> (HTMLページ)</li>
+<li><code>.php</code> (動的ページ)</li>
+<li>拡張子なし（<code>/about</code>など）</li>
+</ul>
+<p>HTMLページをキャッシュしたい場合は、後述する「キャッシュルール」で設定が必要です。
+キャッシュルールでは細やかな調整がじゃのうです。</p>
+<h3 id="初回リクエストはオリジンにリクエストされる">初回リクエストはオリジンにリクエストされる</h3>
+<p>キャッシュは「保存済みのもの」を返す仕組みなので、<strong>最初の1回目はオリジンサーバーに取りに行きます</strong>。</p>
+<p><strong>流れ:</strong></p>
+<ol>
+<li>訪問者A → Cloudflare → オリジン（キャッシュなし）</li>
+<li>Cloudflareが画像を取得＆保存</li>
+<li>訪問者B → Cloudflare → <strong>キャッシュから返す</strong>（速い！）</li>
+</ol>
+<p>つまり、<strong>2人目以降の訪問者が恩恵を受ける</strong>仕組みです。</p>
+<p>また、キャッシュの保存場所（データセンター）は訪問者の場所によって異なります。東京から見る人は東京のキャッシュ、ロンドンから見る人はロンドンのキャッシュを使います。</p>
+<h3 id="キャッシュの保持時間">キャッシュの保持時間</h3>
+<p>キャッシュはずっと保存されるわけではなく、<strong>一定時間で消えます</strong>。</p>
+<p><strong>デフォルトの保持時間:</strong></p>
+<ul>
+<li>Cloudflareが自動判断（通常は数時間〜数日）</li>
+<li>オリジンサーバーの<code>Cache-Control</code>ヘッダーを尊重する</li>
+</ul>
+<p><strong>保持時間が過ぎると:</strong></p>
+<ul>
+<li>キャッシュが消える</li>
+<li>次のリクエストで再度オリジンから取得</li>
+</ul>
+<p>保持時間を明示的に指定したい場合は、「キャッシュルール」で設定できます。</p>
+<h2 id="キャッシュの確認と制御">キャッシュの確認と制御</h2>
+<h3 id="キャッシュしているかを確認する">キャッシュしているかを確認する</h3>
+<p>ブラウザの開発者ツールで簡単に確認できます。</p>
+<p><strong>確認方法:</strong></p>
+<ol>
+<li>ブラウザで対象ページを開く</li>
+<li><code>F12</code>キーを押す（開発者ツールを開く）</li>
+<li>「ネットワーク」タブをクリック</li>
+<li>ページをリロード（<code>Ctrl + R</code>）</li>
+<li>画像やCSSファイルをクリック</li>
+<li>レスポンスヘッダーの中の<code>CF-Cache-Status</code>を確認</li>
+</ol>
+<p><strong>CF-Cache-Statusの意味:</strong></p>
+<ul>
+<li><code>HIT</code> → キャッシュされている！</li>
+<li><code>MISS</code> → キャッシュされていない（初回リクエスト）</li>
+<li><code>EXPIRED</code> → キャッシュが期限切れ</li>
+<li><code>BYPASS</code> → キャッシュしない設定になっている</li>
+<li><code>DYNAMIC</code> → 動的コンテンツのためキャッシュされない</li>
+</ul>
+<h3 id="キャッシュルール">キャッシュルール</h3>
+<p>キャッシュの動作を細かく制御したい場合は、「キャッシュルール」を使います。</p>
+<p><strong>Cloudflareダッシュボードでの設定:</strong></p>
+<ol>
+<li>ログイン → 対象ドメインを選択</li>
+<li>「キャッシュ」→「キャッシュルール」</li>
+<li>「ルールを作成」</li>
+</ol>
+<p><strong>できること:</strong></p>
+<ul>
+<li>HTMLページもキャッシュする</li>
+<li>特定のURLだけキャッシュ時間を変える</li>
+<li>クエリパラメータを無視する</li>
+<li>特定のCookieがある場合はキャッシュしない</li>
+</ul>
+<p><strong>例: HTMLもキャッシュしたい</strong></p>
+<ul>
+<li>URL: <code>*.html</code>を含む</li>
+<li>キャッシュステータス: すべてをキャッシュ</li>
+<li>Edge TTL: 1時間</li>
+</ul>
+<p>これで、HTMLページも1時間キャッシュされるようになります。</p>
+<h3 id="パージ方法">パージ方法</h3>
+<p>キャッシュを手動で削除（パージ）したい場合もあります。例えば、画像を更新したのに古いキャッシュが表示され続ける場合などです。</p>
+<p><strong>パージの方法:</strong></p>
+<ol>
+<li>
+<p><strong>全てパージ</strong> - 全てのキャッシュを削除</p>
+<ul>
+<li>「キャッシュ」→「設定」→「すべてをパージ」</li>
+<li>一番簡単だが、全てのキャッシュがなくなる</li>
+</ul>
+</li>
+<li>
+<p><strong>URL単位でパージ</strong> - 特定のファイルだけ削除</p>
+<ul>
+<li>「キャッシュ」→「設定」→「カスタムパージ」→「URL」</li>
+<li><code>https://example.com/image.jpg</code>のように完全なURLを指定</li>
+</ul>
+</li>
+<li>
+<p><strong>タグでパージ</strong> - タグ付けしたグループを削除（Enterprise）</p>
+<ul>
+<li>上級者向け機能</li>
+</ul>
+</li>
+</ol>
+<p><strong>注意:</strong></p>
+<ul>
+<li>パージすると次回は再びオリジンから取得（遅くなる）</li>
+<li>頻繁にパージするのは非効率</li>
+<li>更新が多いファイルはキャッシュ時間を短くする方が良い</li>
+</ul>
+<h2 id="注意点">注意点</h2>
+<h3 id="動的ページはキャッシュは現実的に不可">動的ページはキャッシュは現実的に不可</h3>
+<p>ログイン状態や個人情報が表示されるページ（動的ページ）は、<strong>キャッシュしてはいけません</strong>。
+機能的には可能ですが、事故になります。</p>
+<p><strong>例:</strong></p>
+<ul>
+<li>マイページ（ユーザーごとに内容が違う）</li>
+<li>ショッピングカート</li>
+<li>管理画面</li>
+</ul>
+<p>これらをキャッシュすると、<strong>他の人の情報が表示される</strong>など重大な問題が起きます。</p>
+<h3 id="キャッシュされないときにときある原因">キャッシュされないときにときある原因</h3>
+<p>「キャッシュされるはずなのに、キャッシュされない」という場合、以下が原因のことが多いです。</p>
+<p><strong>1. Cookieが設定されている</strong></p>
+<ul>
+<li>CloudflareはデフォルトでCookieがあるとキャッシュしない</li>
+<li>解決: キャッシュルールで「Cookieを無視」を設定</li>
+</ul>
+<p><strong>2. Cache-Controlヘッダーで禁止されている</strong></p>
+<ul>
+<li>オリジンサーバーが<code>Cache-Control: no-cache</code>を返している</li>
+<li>解決: サーバー側の設定を確認・修正</li>
+</ul>
+<p><strong>3. 対象外の拡張子・URLパターン</strong></p>
+<ul>
+<li><code>.html</code>や拡張子なしのURLはデフォルトでキャッシュされない</li>
+<li>解決: キャッシュルールで明示的に指定</li>
+</ul>
+<h2 id="さいごに">さいごに</h2>
+<p>Cloudflareのキャッシュは、正しく理解して設定すれば、サイトの速度を劇的に改善できます。</p>
+<p><strong>覚えておくべきポイント:</strong></p>
+<ul>
+<li>キャッシュはURLベースで管理される</li>
+<li>デフォルトでは静的ファイルのみキャッシュ</li>
+<li>HTMLもキャッシュしたい場合は「キャッシュルール」を設定</li>
+<li>動的ページはキャッシュしない</li>
+<li><code>CF-Cache-Status</code>で動作確認</li>
+</ul>
+<p>まずは開発者ツールで自分のサイトを確認して、どのファイルがキャッシュされているか見てみましょう！</p>
+<hr>
+<p><strong>参考リンク:</strong></p>
+<ul>
+<li><a href="https://developers.cloudflare.com/cache/">Cloudflare Cache documentation</a></li>
+</ul>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="http://localhost:1313/post/what-is-cloudflare/" title="Cloudflare（クラウドフレア）とは？">Cloudflare（クラウドフレア）とは？</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 29, 2025	  
-    </span>
-    <span class="post_time"> · 7 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Cloudflare%ef%bc%88%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%95%e3%83%ac%e3%82%a2%ef%bc%89%e3%81%a8%e3%81%af%ef%bc%9f&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fwhat-is-cloudflare%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
+    </div><div class="post_comments">
+  
+  
+  
+  
+</div>
 
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fwhat-is-cloudflare%2f&t=Cloudflare%ef%bc%88%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%95%e3%83%ac%e3%82%a2%ef%bc%89%e3%81%a8%e3%81%af%ef%bc%9f" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
 
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
 
-    </a>
-    <a href="http://localhost:1313/post/what-is-cloudflare/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
 
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>インターネットを使っている人なら誰もが知らず知らずのうちにお世話になっている「Cloudflare」。ウェブサイトを速く、安全にする縁の下の力持ちです。</p>
-          
-          <br>
-          <a href="http://localhost:1313/post/what-is-cloudflare/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="http://localhost:1313/post/blog-setup/" title="Cloudflare Pages &#43; Hugoでブログを構築した記録（誰でもできます）">Cloudflare Pages + Hugoでブログを構築した記録（誰でもできます）</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 28, 2025	  
-    </span>
-    <span class="post_time"> · 3 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Cloudflare%20Pages%20%2b%20Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e6%a7%8b%e7%af%89%e3%81%97%e3%81%9f%e8%a8%98%e9%8c%b2%ef%bc%88%e8%aa%b0%e3%81%a7%e3%82%82%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%ef%bc%89&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog-setup%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog-setup%2f&t=Cloudflare%20Pages%20%2b%20Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e6%a7%8b%e7%af%89%e3%81%97%e3%81%9f%e8%a8%98%e9%8c%b2%ef%bc%88%e8%aa%b0%e3%81%a7%e3%82%82%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%ef%bc%89" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="http://localhost:1313/post/blog-setup/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い「Cloudflare Pages」を使ってみることにしました。  &hellip;</p>
-          
-          <br>
-          <a href="http://localhost:1313/post/blog-setup/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="http://localhost:1313/post/my-first-post/" title="最初の記事">最初の記事</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 27, 2025	  
-    </span>
-    <span class="post_time"> · 1 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=%e6%9c%80%e5%88%9d%e3%81%ae%e8%a8%98%e4%ba%8b&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fmy-first-post%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fmy-first-post%2f&t=%e6%9c%80%e5%88%9d%e3%81%ae%e8%a8%98%e4%ba%8b" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="http://localhost:1313/post/my-first-post/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>これは私の最初のブログ記事です!
-Hugoを使ってブログを作りました。</p>
-          
-          <br>
-          <a href="http://localhost:1313/post/my-first-post/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-      <li>
-      </li>
-    </ul>
-  </div>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -404,9 +412,8 @@ Hugoを使ってブログを作りました。</p>
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
