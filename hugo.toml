@@ -8,7 +8,7 @@ summaryLength = 50     # ← もっと小さい数字に変更
 [params]
   introDescription = """
   Cloudflareパートナー企業で日々Cloudflareの導入・運用のサポートをしています。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。  
-[ご連絡はX（旧Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
+[ご連絡はこちら（Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
   """
   
 [params.sidebar]
