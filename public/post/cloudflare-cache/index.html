@@ -37,7 +37,7 @@
 
 
 
-<link rel="preload" href="http://localhost:1313/css/styles.5a871fcfb9c1583a6befe029a0fd34aa049d5ab1cbb6cac6f044f8fe68c57725e223b4d82cd0782d2e61dcd5139f047b5c21ed8bba5ecd8785cbe98fe4c0e187.css" integrity = "sha512-Wocfz7nBWDpr7&#43;ApoP00qgSdWrHLtsrG8ET4/mjFdyXiI7TYLNB4LS5h3NUTnwR7XCHti7pezYeFy&#43;mP5MDhhw==" as="style" crossorigin="anonymous">
+<link rel="preload" href="http://localhost:1313/css/styles.824ea641aba3e825af6c13d7cc7cb37856a71d6a8fbc1305b4cc3af85d8181e67a1081c585cc1dc0a25f325c6f9bdb410d492b4d1fc407fe9f86140a930d1bec.css" integrity = "sha512-gk6mQauj6CWvbBPXzHyzeFanHWqPvBMFtMw6&#43;F2BgeZ6EIHFhcwdwKJfMlxvm9tBDUkrTR/EB/6fhhQKkw0b7A==" as="style" crossorigin="anonymous">
 
 
 
@@ -45,7 +45,7 @@
 "sha512-8K&#43;3gsSOyvD/1qMrCodbq1YeIo6T5ZvQAm9fnBsuYIQ/&#43;Pf&#43;04fchdes1YAXh9K34Jl4zmdI7i2Xk6JII1FD3w==" crossorigin="anonymous">
 
 
-<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.5a871fcfb9c1583a6befe029a0fd34aa049d5ab1cbb6cac6f044f8fe68c57725e223b4d82cd0782d2e61dcd5139f047b5c21ed8bba5ecd8785cbe98fe4c0e187.css" integrity="sha512-Wocfz7nBWDpr7&#43;ApoP00qgSdWrHLtsrG8ET4/mjFdyXiI7TYLNB4LS5h3NUTnwR7XCHti7pezYeFy&#43;mP5MDhhw==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.824ea641aba3e825af6c13d7cc7cb37856a71d6a8fbc1305b4cc3af85d8181e67a1081c585cc1dc0a25f325c6f9bdb410d492b4d1fc407fe9f86140a930d1bec.css" integrity="sha512-gk6mQauj6CWvbBPXzHyzeFanHWqPvBMFtMw6&#43;F2BgeZ6EIHFhcwdwKJfMlxvm9tBDUkrTR/EB/6fhhQKkw0b7A==" crossorigin="anonymous">
 
   </head>
   <body
@@ -210,7 +210,8 @@
 <li><code>https://example.com/IMAGE.jpg</code> → キャッシュ3（大文字小文字も区別）</li>
 </ul>
 <p>つまり、URLが少しでも違えば<strong>別のキャッシュ</strong>として扱われます。</p>
-<p>これは便利な反面、注意も必要です。例えば、クエリパラメータ（<code>?v=1</code>など）を安易に使うと、同じ画像なのにキャッシュが分散してしまいます。</p>
+<p>これは便利な反面、注意も必要です。<br>
+例えば、クエリパラメータ（<code>?v=1</code>など）を安易に使うと、同じ画像なのにキャッシュが分散してしまいます。</p>
 <h3 id="cloudflareでのキャッシュ対象拡張子">Cloudflareでのキャッシュ対象拡張子</h3>
 <p>Cloudflareは<strong>デフォルトで静的ファイルのみ</strong>をキャッシュします。</p>
 <p><strong>デフォルトでキャッシュされる拡張子（例）</strong></p>
@@ -227,8 +228,8 @@
 <li><code>.php</code> (動的ページ)</li>
 <li>拡張子なし（<code>/about</code>など）</li>
 </ul>
-<p>HTMLページをキャッシュしたい場合は、後述する「キャッシュルール」で設定が必要です。
-キャッシュルールでは細やかな調整がじゃのうです。</p>
+<p>HTMLページをキャッシュしたい場合は、後述する「キャッシュルール」で設定が必要です。<br>
+キャッシュルールでは細やかに調整することができます。</p>
 <h3 id="初回リクエストはオリジンにリクエストされる">初回リクエストはオリジンにリクエストされる</h3>
 <p>キャッシュは「保存済みのもの」を返す仕組みなので、<strong>最初の1回目はオリジンサーバーに取りに行きます</strong>。</p>
 <p><strong>流れ:</strong></p>
