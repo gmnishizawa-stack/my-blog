@@ -2,17 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nishizawa Pages</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nishizawa.pages.dev/</link>
     <description>Recent content on Nishizawa Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflareに個人情報はキャッシュされる？安全性を解説</title>
+      <link>https://nishizawa.pages.dev/post/cloudflare-cache2/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cloudflare-cache2/</guid>
+      <description>
+        
+          
+            Cloudflareを導入しようと考えたとき、こんな不安をよく聞きます。「個人情報がCloudflareにキャッシュされて、他の人に見られたりしないだろうか？」この記事では、こうした不安について、Cloudflareのキャッシュの仕組みをもとに、解説します。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Cloudflare（クラウドフレア）のキャッシュを理解する</title>
-      <link>http://localhost:1313/post/cloudflare-cache/</link>
+      <link>https://nishizawa.pages.dev/post/cloudflare-cache/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/cloudflare-cache/</guid>
+      <guid>https://nishizawa.pages.dev/post/cloudflare-cache/</guid>
       <description>
         
           
@@ -25,10 +41,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）とは？</title>
-      <link>http://localhost:1313/post/what-is-cloudflare/</link>
+      <link>https://nishizawa.pages.dev/post/what-is-cloudflare/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/what-is-cloudflare/</guid>
+      <guid>https://nishizawa.pages.dev/post/what-is-cloudflare/</guid>
       <description>
         
           
@@ -40,11 +56,11 @@
     </item>
     
     <item>
-      <title>Cloudflare Pages &#43; Hugoでブログを構築した記録（誰でもできます）</title>
-      <link>http://localhost:1313/post/blog-setup/</link>
+      <title>Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）</title>
+      <link>https://nishizawa.pages.dev/post/blog-setup/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/blog-setup/</guid>
+      <guid>https://nishizawa.pages.dev/post/blog-setup/</guid>
       <description>
         
           
@@ -57,10 +73,10 @@
     
     <item>
       <title>最初の記事</title>
-      <link>http://localhost:1313/post/my-first-post/</link>
+      <link>https://nishizawa.pages.dev/post/my-first-post/</link>
       <pubDate>Mon, 27 Oct 2025 13:41:43 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <guid>https://nishizawa.pages.dev/post/my-first-post/</guid>
       <description>
         
           

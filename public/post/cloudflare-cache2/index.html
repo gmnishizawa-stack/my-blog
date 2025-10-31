@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>Tags | Nishizawa Pages</title>
+<title>Cloudflareに個人情報はキャッシュされる？安全性を解説 | Nishizawa Pages</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,22 +22,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="Cloudflareを導入しようと考えたとき、こんな不安をよく聞きます。「個人情報がCloudflareにキャッシュされて、他の人に見られたりしないだろうか？」この記事では、こうした不安について、Cloudflareのキャッシュの仕組みをもとに、解説します。" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="Cloudflareに個人情報はキャッシュされる？安全性を解説" />
 <meta name="twitter:image" content="https://nishizawa.pages.dev/"/>
-<meta property="og:url" content="https://nishizawa.pages.dev/tags/" />
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://nishizawa.pages.dev/post/cloudflare-cache2/" />
+<meta property="og:title" content="Cloudflareに個人情報はキャッシュされる？安全性を解説" />
+<meta property="og:description" content="Cloudflareを導入しようと考えたとき、こんな不安をよく聞きます。「個人情報がCloudflareにキャッシュされて、他の人に見られたりしないだろうか？」この記事では、こうした不安について、Cloudflareのキャッシュの仕組みをもとに、解説します。" />
 <meta property="og:image" content="https://nishizawa.pages.dev/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://nishizawa.pages.dev/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://nishizawa.pages.dev/icons/favicon-32x32.png">
 <link rel="manifest" href="https://nishizawa.pages.dev/icons/site.webmanifest">
 
-<link rel="canonical" href="https://nishizawa.pages.dev/tags/">
-<link rel="alternate" type="application/rss+xml" href="https://nishizawa.pages.dev/tags/index.xml" title="Nishizawa Pages" />
+<link rel="canonical" href="https://nishizawa.pages.dev/post/cloudflare-cache2/">
 
 
 
@@ -97,16 +98,193 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-      <li>
-      </li>
-    </ul>
+  <article class="post_content">
+    <h1 class="post_title">Cloudflareに個人情報はキャッシュされる？安全性を解説</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 31, 2025	  
+    </span>
+    <span class="post_time"> · 6 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Cloudflare%e3%81%ab%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e3%81%af%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%95%e3%82%8c%e3%82%8b%ef%bc%9f%e5%ae%89%e5%85%a8%e6%80%a7%e3%82%92%e8%a7%a3%e8%aa%ac&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-cache2%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-cache2%2f&t=Cloudflare%e3%81%ab%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e3%81%af%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%95%e3%82%8c%e3%82%8b%ef%bc%9f%e5%ae%89%e5%85%a8%e6%80%a7%e3%82%92%e8%a7%a3%e8%aa%ac" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/cloudflare-cache2/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
   </div>
+  </span>
+  </div>
+
+    <div class="post_body"><h2 id="はじめによくある不安">はじめに:よくある不安</h2>
+<p>Cloudflareを導入しようと考えたとき、こんな不安をよく聞きます。</p>
+<p>「個人情報がCloudflareにキャッシュされて、他の人に見られたりしないだろうか？」
+「Cloudflareを通すと、ログイン情報やクレジットカード番号が保存されてしまうのでは？」</p>
+<p>この記事では、こうした不安について、Cloudflareのキャッシュの仕組みをもとに、解説します。</p>
+<h2 id="結論基本的にキャッシュされない">結論:基本的にキャッシュされない</h2>
+<p><strong>結論から言うと、個人情報は基本的にはキャッシュされません。安心してください！</strong></p>
+<p>Cloudflareはデフォルトで、静的ファイル(画像やCSSなど)だけをキャッシュする設定になっています。<br>
+HTMLページは、デフォルトではキャッシュ対象外です。</p>
+<p>ただし、<strong>設定次第では事故になる可能性がある</strong>ので、最後まで読んでください。</p>
+<h2 id="なぜ個人情報は基本的にキャッシュされないのか">なぜ個人情報は基本的にキャッシュされないのか</h2>
+<h3 id="cloudflareのデフォルト動作">Cloudflareのデフォルト動作</h3>
+<p>Cloudflareは「拡張子ベース」でキャッシュするかどうかを判断しています。</p>
+<p><strong>キャッシュされる拡張子(デフォルト):</strong></p>
+<ul>
+<li>画像: <code>.jpg</code>, <code>.png</code>, <code>.gif</code>, <code>.webp</code>, <code>.svg</code> など</li>
+<li>スタイル: <code>.css</code></li>
+<li>スクリプト: <code>.js</code></li>
+<li>フォント: <code>.woff</code>, <code>.woff2</code>, <code>.ttf</code> など</li>
+<li>その他の静的ファイル</li>
+</ul>
+<p><strong>キャッシュされない:</strong></p>
+<ul>
+<li>HTMLページ(<code>.html</code>や拡張子なしのURL)</li>
+<li>APIレスポンス(<code>.json</code>など、デフォルトでは対象外)</li>
+</ul>
+<p>つまり、通常のHTMLページはもちろん、ログインページやマイページのような「ユーザーごとに内容が変わるHTMLページ」も、特別な設定をしなければキャッシュされないのです。</p>
+<h3 id="オリジンサーバーの設定が最優先">オリジンサーバーの設定が最優先</h3>
+<p>さらに重要なのが、<strong>オリジンサーバー(あなたのWebサーバー)の指示が尊重される</strong>という点です。</p>
+<p>Webサーバーは、レスポンスに<code>Cache-Control</code>ヘッダーをつけることで、「このページはキャッシュしないでほしい」という指示を出すことができます。</p>
+<p>Cloudflareは基本的にこの<code>Cache-Control</code>ヘッダーを尊重するので、オリジンサーバーが「キャッシュしないで」と言っていれば、キャッシュしません。<br>
+元々のウェブサーバのポリシーがあって設計されているサイトを、後から入ったCloudflareが無視してしまう、こんなことをすれば事故が起きてもおかしくないわけですから、
+Cloudflareはそういう事故がないようにオリジンを尊重にしているのです。</p>
+<h2 id="実際にキャッシュされるものされないもの">実際にキャッシュされるもの・されないもの</h2>
+<p>具体例で見てみましょう。</p>
+<h3 id="キャッシュされないもの">キャッシュされないもの</h3>
+<ul>
+<li><code>https://example.com/</code> (トップページのHTML)</li>
+<li><code>https://example.com/login</code> (ログインページ)</li>
+<li><code>https://example.com/mypage</code> (マイページ)</li>
+<li><code>https://example.com/products</code> (商品一覧ページのHTML)</li>
+<li><code>https://example.com/api/user/profile</code> (APIレスポンス)</li>
+</ul>
+<p>これらはHTMLや動的コンテンツなので、デフォルトではキャッシュされません。</p>
+<h3 id="キャッシュされるもの">キャッシュされるもの</h3>
+<ul>
+<li><code>https://example.com/images/logo.png</code> (画像)</li>
+<li><code>https://example.com/css/style.css</code> (スタイルシート)</li>
+<li><code>https://example.com/js/app.js</code> (JavaScript)</li>
+</ul>
+<p>これらは静的ファイルなので、キャッシュされます。ただし、これらのファイルに個人情報が含まれることは通常ありません。</p>
+<h2 id="注意設定ミスで重大事故になるケース">注意:設定ミスで重大事故になるケース</h2>
+<p>ここまで読んで「じゃあ安心だね!」と思われたかもしれませんが、<strong>油断は禁物</strong>です。</p>
+<p>設定を間違えると、個人情報が他のユーザーに見えてしまうという重大なセキュリティ事故につながります。</p>
+<h3 id="実際に起きた事例メルカリの個人情報流出事故">実際に起きた事例:メルカリの個人情報流出事故</h3>
+<p>2017年、メルカリでCDN（Cloudflareではありませんが）の切り替え作業中に個人情報流出事故が発生しました。</p>
+<p><strong>何が起きたのか:</strong></p>
+<ul>
+<li>本来キャッシュすべきでない動的なHTMLページがキャッシュされてしまった</li>
+<li>Aさんがアクセスしたマイページの内容が、Bさんにも表示されてしまった</li>
+<li>約5,000件の個人情報が流出</li>
+</ul>
+<p><strong>原因:</strong></p>
+<ul>
+<li>切り替え前のCDNでは、CDNの設定で「全くキャッシュしない」ようにしていた</li>
+<li>切り替え後のCDNでは、<code>Cache-Control</code>ヘッダーでキャッシュを制御する方式だった</li>
+<li>しかし、Webサーバー側に適切な<code>Cache-Control</code>ヘッダーが設定されていなかった</li>
+<li>結果、動的ページがキャッシュされてしまった</li>
+</ul>
+<p>参考: <a href="https://engineering.mercari.com/blog/entry/2017-06-22-204500/">CDN切り替え作業における、Web版メルカリの個人情報流出の原因につきまして</a></p>
+<h3 id="同じurlで違う内容を返すページの危険性">同じURLで違う内容を返すページの危険性</h3>
+<p>以下のようなページは、<strong>絶対にキャッシュしてはいけません</strong>:</p>
+<p><strong>プロフィールページ(HTML)</strong></p>
+<pre tabindex="0"><code>https://example.com/profile
+</code></pre><p>→ ユーザーAとユーザーBでは内容が全く異なる</p>
+<p><strong>APIレスポンス(JSON)</strong></p>
+<pre tabindex="0"><code>https://example.com/api/user/me
+</code></pre><p>→ ログインユーザーによって返すデータが異なる</p>
+<p><strong>ユーザーごとに異なる画像</strong></p>
+<pre tabindex="0"><code>https://example.com/profile/avatar.jpg
+</code></pre><p>→ 同じURLでも、ユーザーによって異なる画像が返される場合</p>
+<p>これらをキャッシュしてしまうと、「Aさんの個人情報がキャッシュされて、Bさんに表示される」という事故が起きます。</p>
+<h2 id="開発者サイト運営者が気をつけること">開発者・サイト運営者が気をつけること</h2>
+<p>では、こうした事故を防ぐために、何に気をつければいいのでしょうか?</p>
+<h3 id="1-htmlを無理にキャッシュしようとしない">1. HTMLを無理にキャッシュしようとしない</h3>
+<p>「サイトを高速化したい!」という気持ちはわかりますが、動的なHTMLページを無理にキャッシュするのは危険です。</p>
+<p>どうしてもHTMLをキャッシュしたい場合は:</p>
+<ul>
+<li>完全に静的なページ(問い合わせページ、会社概要など)だけに限定する</li>
+<li>ログイン状態によって内容が変わらないページだけに限定する</li>
+</ul>
+<h3 id="2-cache-everythingを安易に使わない">2. &ldquo;Cache Everything&quot;を安易に使わない</h3>
+<p>Cloudflareには「Cache Everything」というページルールがあります。これは文字通り「すべてキャッシュする」という設定です。</p>
+<p>この設定は便利ですが、<strong>動的なページにも適用してしまうと危険</strong>です。使う場合は、対象URLを慎重に設定しましょう。</p>
+<h3 id="3-動的コンテンツには必ずcache-controlヘッダーを設定">3. 動的コンテンツには必ずCache-Controlヘッダーを設定</h3>
+<p>Webサーバー側で、個人情報を含むページには必ず以下のようなヘッダーを設定しましょう:</p>
+<pre tabindex="0"><code>Cache-Control: no-store, no-cache, must-revalidate, private
+</code></pre><p>これで「絶対にキャッシュしないで」という明確な指示になります。</p>
+<h3 id="4-テスト時は複数ユーザーでの動作確認が必須">4. テスト時は複数ユーザーでの動作確認が必須</h3>
+<p>CDNの設定を変更したら、必ず以下のテストを行いましょう:</p>
+<ul>
+<li>ユーザーAでログインしてマイページを表示</li>
+<li><strong>別のブラウザ(またはシークレットモード)でユーザーBとしてログイン</strong></li>
+<li>ユーザーBのマイページにユーザーAの情報が表示されないか確認</li>
+</ul>
+<p>「自分のアカウントだけで動作確認」では、この種のバグは見つかりません。</p>
+<h3 id="5-事故が起きたときの対処法即座パージ">5. 事故が起きたときの対処法(即座パージ)</h3>
+<p>万が一、誤って個人情報がキャッシュされてしまった場合は、<strong>すぐにキャッシュをパージ(削除)する</strong>必要があります。</p>
+<p>Cloudflareでのパージ方法:</p>
+<ol>
+<li>Cloudflareダッシュボードにログイン</li>
+<li>該当ドメインを選択</li>
+<li>「キャッシュ」→「キャッシュをパージ」</li>
+<li>「すべてをパージ」または特定のURLを指定してパージ</li>
+</ol>
+<p>緊急時は「すべてをパージ」で一括削除するのが確実です。</p>
+<h2 id="まとめ">まとめ</h2>
+<ul>
+<li>Cloudflareのデフォルト設定では、個人情報を含むHTMLページはキャッシュされない</li>
+<li>静的な拡張子(画像、CSS、JSなど)のみがキャッシュ対象</li>
+<li>キャッシュ動作はオリジンサーバーの<code>Cache-Control</code>ヘッダーが尊重される</li>
+<li>ただし、設定ミスで重大なセキュリティ事故につながる可能性がある</li>
+<li>動的ページを無理にキャッシュしない</li>
+</ul>
+<p>基本を理解して適切に設定すれば、Cloudflareは安全に使えますが安易にキャッシュ設定を変更するのは危険です。<br>
+特に、個人情報を扱うサイトでは、<strong>慎重すぎるくらい慎重に</strong>設定を行いましょう。</p>
+
+    </div><div class="post_comments">
+  
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -144,9 +322,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

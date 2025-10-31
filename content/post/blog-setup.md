@@ -1,5 +1,5 @@
 +++
-title = 'Cloudflare Pages + Hugoでブログを構築した記録（誰でもできます）'
+title = 'Cloudflare Pages + Hugoでブログ構築（誰でもできます）'
 date = 2025-10-28
 description = 'このブログをどうやって作ったか、手順をまとめました'
 summary = '今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い「Cloudflare Pages」を使ってみることにしました。  ...'
