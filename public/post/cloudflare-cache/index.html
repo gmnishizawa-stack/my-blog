@@ -19,14 +19,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。" />
+<meta name="description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで詳しく解説します。" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Cloudflare（クラウドフレア）のキャッシュを理解する" />
 <meta name="twitter:image" content="http://localhost:1313/"/>
 <meta property="og:url" content="http://localhost:1313/post/cloudflare-cache/" />
 <meta property="og:title" content="Cloudflare（クラウドフレア）のキャッシュを理解する" />
-<meta property="og:description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。" />
+<meta property="og:description" content="Cloudflareを使い始めたとき、「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。 この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで詳しく解説します。" />
 <meta property="og:image" content="http://localhost:1313/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/icons/apple-touch-icon.png">
@@ -37,7 +37,7 @@
 
 
 
-<link rel="preload" href="http://localhost:1313/css/styles.e5d041590491f90e372183d0c4d7257e22daf864ba799196bcc95f276ca2a528d6ebb50b7f88b0e7c62e3649b9fe62a435ef76bafdcbf54e22ffb152789f5390.css" integrity = "sha512-5dBBWQSR&#43;Q43IYPQxNclfiLa&#43;GS6eZGWvMlfJ2yipSjW67ULf4iw58YuNkm5/mKkNe92uv3L9U4i/7FSeJ9TkA==" as="style" crossorigin="anonymous">
+<link rel="preload" href="http://localhost:1313/css/styles.5a871fcfb9c1583a6befe029a0fd34aa049d5ab1cbb6cac6f044f8fe68c57725e223b4d82cd0782d2e61dcd5139f047b5c21ed8bba5ecd8785cbe98fe4c0e187.css" integrity = "sha512-Wocfz7nBWDpr7&#43;ApoP00qgSdWrHLtsrG8ET4/mjFdyXiI7TYLNB4LS5h3NUTnwR7XCHti7pezYeFy&#43;mP5MDhhw==" as="style" crossorigin="anonymous">
 
 
 
@@ -45,7 +45,7 @@
 "sha512-8K&#43;3gsSOyvD/1qMrCodbq1YeIo6T5ZvQAm9fnBsuYIQ/&#43;Pf&#43;04fchdes1YAXh9K34Jl4zmdI7i2Xk6JII1FD3w==" crossorigin="anonymous">
 
 
-<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.e5d041590491f90e372183d0c4d7257e22daf864ba799196bcc95f276ca2a528d6ebb50b7f88b0e7c62e3649b9fe62a435ef76bafdcbf54e22ffb152789f5390.css" integrity="sha512-5dBBWQSR&#43;Q43IYPQxNclfiLa&#43;GS6eZGWvMlfJ2yipSjW67ULf4iw58YuNkm5/mKkNe92uv3L9U4i/7FSeJ9TkA==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.5a871fcfb9c1583a6befe029a0fd34aa049d5ab1cbb6cac6f044f8fe68c57725e223b4d82cd0782d2e61dcd5139f047b5c21ed8bba5ecd8785cbe98fe4c0e187.css" integrity="sha512-Wocfz7nBWDpr7&#43;ApoP00qgSdWrHLtsrG8ET4/mjFdyXiI7TYLNB4LS5h3NUTnwR7XCHti7pezYeFy&#43;mP5MDhhw==" crossorigin="anonymous">
 
   </head>
   <body
@@ -108,7 +108,7 @@
     <span class="post_date">
       Oct 30, 2025	  
     </span>
-    <span class="post_time"> · 7 min read</span>
+    <span class="post_time"> · 8 min read</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
@@ -145,14 +145,17 @@
   </div>
 
     <div class="post_body"><p>「キャッシュ」という言葉をよく聞くけど、実際どう動いているのか分かりにくいですよね。<br>
-この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで、非エンジニア目線で解説します。</p>
+実は私は、Cloudflareに携わった初めのころ、Cloudflareにサイトを登録するとCloudflareがサイトのデータを抽出してコピーしてくれるんだ、みたいなざっくりした、しかも誤った理解をしていました。</p>
+<p>この記事では、Cloudflareのキャッシュの基本から実践的な使い方まで詳しく解説します。</p>
 <h2 id="キャッシュの基礎">キャッシュの基礎</h2>
 <h3 id="キャッシュとは何かどういうメリットがあるのか">キャッシュとは何か、どういうメリットがあるのか</h3>
 <p>キャッシュとは、一度取得したデータを「手元に保存しておく」仕組みのことです。</p>
 <p>例えば、あなたのウェブサイトに画像があるとします。<br>
-訪問者がその画像を見るたびに、毎回ウェブサーバーからデータをとりに行くような動きになっています。</p>
-<p>Cloudflareがあると、画像をCloudflareのサーバーにキャッシュ（保存）しておいて、次の訪問者には「保存してあったもの」を素早く渡せます。<br>
-このような動作をするものをCDNとよびます。</p>
+通常は訪問者がその画像を見るたびに、毎回ウェブサーバーからデータをとりに行く動きをします。</p>
+<p>Cloudflareがある場合はウェブサーバと訪問者の間に入り、
+要求された画像をCloudflareのサーバーにキャッシュ（保存）しておいて、次の訪問者には「保存してあったもの」を素早く渡せます。<br>
+このような動作をリバースプロキシといいます。<br>
+キャッシュはリバースプロキシが持つ機能の一つです。</p>
 <p>Cloudflareのサーバをエッジサーバ、ウェブサーバをオリジンサーバと呼びます。</p>
 <p><strong>ここがポイント</strong></p>
 <ul>
@@ -169,7 +172,7 @@
 <li>✅ <code>https://example.com/image.jpg</code> → キャッシュされる</li>
 <li>❌ <code>https://other-site.com/image.jpg</code> → キャッシュされない</li>
 </ul>
-<p>つまり、ページ内で外部サイトの画像やCSSを読み込んでいる場合、それらは<strong>Cloudflareのキャッシュ対象外</strong>になります。</p>
+<p>つまり、ページ内で外部のドメインの画像やCSS、Javascriptを読み込んでいる場合、それらは<strong>Cloudflareのキャッシュ対象外</strong>になります。</p>
 <p>自分のドメインのリソースだけがキャッシュの恩恵を受けられる、ということを覚えておきましょう。</p>
 <h3 id="cdnとキャッシュは同じ意味">CDNとキャッシュは同じ意味?</h3>
 <p>よく混同されますが、<strong>違います</strong>。</p>
