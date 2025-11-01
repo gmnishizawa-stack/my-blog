@@ -36,3 +36,40 @@
 .post_content li
   font-size: 105% !important
   line-height: 2.0 !important
+
+
+// サイドバー区切り線
+.sidebar_inner::before
+  background: #d0d0d0 !important
+  
+
+// サイドバーをスクロール時に固定表示
+.sidebar
+  position: sticky
+  top: 20px
+  align-self: flex-start
+
+// ::beforeの開始位置を画像の位置に合わせる
+section.sidebar_inner::before
+  top: 0 !important
+  margin-top: 0 !important
+
+// サイドバー内の最初の要素（プロフィール）の上余白を完全削除
+.sidebar_inner > *:first-child
+  margin-top: 0 !important
+  padding-top: 0 !important
+
+// 画像自体の上マージンも削除
+.sidebar .author_header,
+.sidebar .author_header *
+  margin-top: 0 !important
+  padding-top: 0 !important
+
+section.sidebar_inner::before
+  top: 20px !important
+
+// サイドバーをスクロール時に固定表示（上部に余白を追加）
+.sidebar
+  position: sticky
+  top: 60px
+  align-self: flex-start
