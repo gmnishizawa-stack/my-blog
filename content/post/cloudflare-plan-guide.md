@@ -6,7 +6,7 @@ summary = 'Cloudflareの公式サイトには機能一覧が載っています�
 
 ## はじめに:プラン選びでよくある悩み
 
-Cloudflareを導入しようと思って公式サイトを見ると、Free、Pro、Business、Enterpriseと4つのプランが並んでいます。
+Cloudflareの公式サイトを見ると、Free、Pro、Business、Enterpriseと4つのプランが並んでいます。
 
 機能比較表を見ても、専門用語が並んでいて、「結局、自分のサイトにはどれが合っているの？」と分からなくなってしまう方も多いのではないでしょうか。
 
