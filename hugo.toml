@@ -1,13 +1,13 @@
 baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
-title = 'Nishizawa Pages'
+title = 'Nishizawa Pages | Cloudflare Guide'
 theme = 'clarity'
 hasCJKLanguage = true
 summaryLength = 50
 
 [params]
   introDescription = """
-  Cloudflareパートナー企業で日々Cloudflareの導入・運用のサポートをしています。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。非エンジニアの視点で、誰でも理解できる言葉を心がけています。  
+  Cloudflareパートナー企業で日々Cloudflareの導入・運用のサポートをしています西澤です。Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。非エンジニアの視点で、わかりやすい言葉を心がけています。  
 [ご連絡はこちら（Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
   """
   customJS = ["js/analytics.js"]
