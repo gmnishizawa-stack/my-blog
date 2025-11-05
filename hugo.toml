@@ -1,6 +1,7 @@
 baseURL = 'https://nishizawa.pages.dev/'
 languageCode = 'ja'
 title = 'Nishizawa Pages | Cloudflare Guide'
+defaultContentLanguage = 'ja' 
 theme = 'clarity'
 hasCJKLanguage = true
 summaryLength = 50
