@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Nishizawa Pages</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on Nishizawa Pages</description>
+    <title>Posts on Nishizawa Pages | Cloudflare Guide</title>
+    <link>https://nishizawa.pages.dev/post/</link>
+    <description>Recent content in Posts on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？</title>
+      <link>https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/</link>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/</guid>
+      <description>
+        
+          
+            ファイアウォールがあれば安全？実は従来のファイアウォールでは防げない攻撃が増えています。この記事では、従来のファイアウォールとWAFの違いを分かりやすく解説し、Cloudflare WAFの強みをご紹介します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareのプラン選び:経験者が語る実践的なガイド</title>
+      <link>https://nishizawa.pages.dev/post/cloudflare-plan-guide/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cloudflare-plan-guide/</guid>
+      <description>
+        
+          
+            Cloudflareの公式サイトには機能一覧が載っていますが、「結局どのプランを選べばいいの？」と迷っていませんか？この記事では、実際にCloudflareを使ってきた経験をもとに、プラン選びの実践的なポイントを解説します。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Cloudflareに個人情報はキャッシュされる？安全性を解説</title>
-      <link>http://localhost:1313/post/cloudflare-cache2/</link>
+      <link>https://nishizawa.pages.dev/post/cloudflare-cache2/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/cloudflare-cache2/</guid>
+      <guid>https://nishizawa.pages.dev/post/cloudflare-cache2/</guid>
       <description>
         
           
@@ -25,10 +57,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）のキャッシュを理解する</title>
-      <link>http://localhost:1313/post/cloudflare-cache/</link>
+      <link>https://nishizawa.pages.dev/post/cloudflare-cache/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/cloudflare-cache/</guid>
+      <guid>https://nishizawa.pages.dev/post/cloudflare-cache/</guid>
       <description>
         
           
@@ -41,10 +73,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）とは？</title>
-      <link>http://localhost:1313/post/what-is-cloudflare/</link>
+      <link>https://nishizawa.pages.dev/post/what-is-cloudflare/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/what-is-cloudflare/</guid>
+      <guid>https://nishizawa.pages.dev/post/what-is-cloudflare/</guid>
       <description>
         
           
@@ -57,10 +89,10 @@
     
     <item>
       <title>Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）</title>
-      <link>http://localhost:1313/post/blog-setup/</link>
+      <link>https://nishizawa.pages.dev/post/blog-setup/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/blog-setup/</guid>
+      <guid>https://nishizawa.pages.dev/post/blog-setup/</guid>
       <description>
         
           
@@ -73,10 +105,10 @@
     
     <item>
       <title>最初の記事</title>
-      <link>http://localhost:1313/post/my-first-post/</link>
+      <link>https://nishizawa.pages.dev/post/my-first-post/</link>
       <pubDate>Mon, 27 Oct 2025 13:41:43 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <guid>https://nishizawa.pages.dev/post/my-first-post/</guid>
       <description>
         
           

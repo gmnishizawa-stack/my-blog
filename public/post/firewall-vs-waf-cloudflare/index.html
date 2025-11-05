@@ -4,10 +4,12 @@
   lang="ja"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>カテゴリ | Nishizawa Pages | Cloudflare Guide</title>
+<title>従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？ | Nishizawa Pages | Cloudflare Guide</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,22 +22,21 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="ファイアウォールがあれば安全？実は従来のファイアウォールでは防げない攻撃が増えています。この記事では、従来のファイアウォールとWAFの違いを分かりやすく解説し、Cloudflare WAFの強みをご紹介します。" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Categories" />
+<meta name="twitter:title" content="従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？" />
 <meta name="twitter:image" content="https://nishizawa.pages.dev/"/>
-<meta property="og:url" content="https://nishizawa.pages.dev/categories/" />
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/" />
+<meta property="og:title" content="従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？" />
+<meta property="og:description" content="ファイアウォールがあれば安全？実は従来のファイアウォールでは防げない攻撃が増えています。この記事では、従来のファイアウォールとWAFの違いを分かりやすく解説し、Cloudflare WAFの強みをご紹介します。" />
 <meta property="og:image" content="https://nishizawa.pages.dev/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://nishizawa.pages.dev/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://nishizawa.pages.dev/icons/favicon-32x32.png">
 <link rel="manifest" href="https://nishizawa.pages.dev/icons/site.webmanifest">
 
-<link rel="canonical" href="https://nishizawa.pages.dev/categories/">
-<link rel="alternate" type="application/rss+xml" href="https://nishizawa.pages.dev/categories/index.xml" title="Nishizawa Pages | Cloudflare Guide" />
+<link rel="canonical" href="https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/">
 
 
 
@@ -97,16 +98,212 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-      <li>
-      </li>
-    </ul>
+  <article class="post_content">
+    <h1 class="post_title">従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Nov 4, 2025	  
+    </span>
+    <span class="post_time"> · 6 分で読了</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=%e5%be%93%e6%9d%a5%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%82%a2%e3%82%a6%e3%82%a9%e3%83%bc%e3%83%ab%e3%81%a8WAF%e3%81%ae%e9%81%95%e3%81%84%e3%83%bbCloudflare%20WAF%e3%81%ae%e5%bc%b7%e3%81%bf%e3%81%af%ef%bc%9f&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2ffirewall-vs-waf-cloudflare%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2ffirewall-vs-waf-cloudflare%2f&t=%e5%be%93%e6%9d%a5%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%82%a2%e3%82%a6%e3%82%a9%e3%83%bc%e3%83%ab%e3%81%a8WAF%e3%81%ae%e9%81%95%e3%81%84%e3%83%bbCloudflare%20WAF%e3%81%ae%e5%bc%b7%e3%81%bf%e3%81%af%ef%bc%9f" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
   </div>
+  </span>
+  </div>
+
+    <div class="post_body"><h2 id="はじめにファイアウォールとwafって何が違うの">はじめに:「ファイアウォール」と「WAF」って何が違うの？</h2>
+<p>「WAFを導入しましょう」と言われて、「え、ファイアウォールとは違うの？」と思ったことはありませんか？</p>
+<p>どちらも「ファイアウォール」という名前がついているし、どこが違うのだろう？</p>
+<p>でも、実はこの2つ、<strong>全然違うものを守っている</strong>んです。</p>
+<p>今回は、従来のファイアウォールとWAFの違いを、できるだけ専門用語を使わずに解説します。<br>
+「結局何が違うの？」というモヤモヤを解消できれば嬉しいです。</p>
+<h2 id="結論従来のファイアウォールとwafは見ているものが違う">結論:従来のファイアウォールとWAFは「見ているもの」が違う</h2>
+<p>先に結論を言うと、最も重要な違いは以下の通りです:</p>
+<ul>
+<li><strong>従来のファイアウォール</strong> → 「<strong>どこから来たか</strong>」を見る</li>
+<li><strong>WAF</strong> → 「<strong>何をしようとしているか</strong>」を見る</li>
+</ul>
+<p>この違いが、Webアプリケーションのセキュリティにおいて決定的に重要なのです。</p>
+<p>それでは、この違いを分かりやすく解説していきましょう。</p>
+<h2 id="従来のファイアウォールとwafの違い">従来のファイアウォールとWAFの違い</h2>
+<h3 id="郵便配達で例えると">郵便配達で例えると</h3>
+<p><strong>従来のファイアウォール = 封筒の外側をチェックする門番</strong></p>
+<p>封筒の外側だけを確認します:</p>
+<ul>
+<li>差出人の住所（送信元IPアドレス）</li>
+<li>宛先の住所（宛先IPアドレス）</li>
+<li>配送方法（TCPかUDPか）</li>
+<li>どの入口から入るか（ポート番号）</li>
+</ul>
+<p>正規の送信元ではない場合「郵便物は受け取らない」「この入口（ポート）は閉鎖」という判断をし、拒否します。</p>
+<p><strong>WAF = 封筒を開けて中身をチェックする検閲係</strong></p>
+<p>封筒を開けて中身を詳しく確認します:</p>
+<ul>
+<li>手紙の内容（HTTPリクエストの本文）</li>
+<li>どんな用件か（GETかPOSTか）</li>
+<li>添付物は何か（パラメータの値）</li>
+<li>怪しい文章や記号がないか（攻撃コード）</li>
+</ul>
+<p>「正規の住所から来ても、中に危険物が入っていたら止める」という判断をします。</p>
+<h2 id="ネットワーク層とアプリケーション層の違い">ネットワーク層とアプリケーション層の違い</h2>
+<h3 id="インターネット通信は階層構造になっている">インターネット通信は「階層構造」になっている</h3>
+<p>インターネット通信は、役割が事なる<strong>7つの層（Layer）が重なって</strong>動いています。<br>
+従来のファイアウォールとWAFは、この異なる層で動作しているため、見えるものが全く違うのです。</p>
+<p><strong>下の層（物理的な部分）</strong></p>
+<p><strong>ネットワーク層（Layer 3）</strong></p>
+<ul>
+<li>IPアドレス（どこからどこへ）</li>
+<li>ルーターがここで働く</li>
+<li>例:「東京都渋谷区○○から、大阪市北区○○へ配達」</li>
+</ul>
+<p><strong>トランスポート層（Layer 4）</strong></p>
+<ul>
+<li>ポート番号（どの入口から）</li>
+<li>TCP（確実配達）かUDP（速達）か</li>
+<li>例:「正面玄関（ポート80）から配達」</li>
+</ul>
+<p><strong>従来のファイアウォールはここで動作します</strong></p>
+<hr>
+<p><strong>上の層（内容の部分）</strong></p>
+<p><strong>アプリケーション層（L7）</strong></p>
+<ul>
+<li>HTTP、HTTPS（Webページ）</li>
+<li>実際のデータ内容</li>
+<li>例:「寿司10貫、醤油多め、わさび抜き」</li>
+<li>例:「ユーザーID: tanaka、パスワード: ****」</li>
+</ul>
+<p><strong>WAFはここで動作します</strong></p>
+<h3 id="建物で例えると分かりやすい">建物で例えると分かりやすい</h3>
+<p><strong>ネットワーク層・トランスポート層（L3/L4）</strong></p>
+<ul>
+<li>建物の住所</li>
+<li>何階の何号室か</li>
+<li>エレベーターでの移動</li>
+</ul>
+<p><strong>アプリケーション層（L7）</strong></p>
+<ul>
+<li>部屋に入って実際に何をするか</li>
+<li>書類を提出する、会議をする、荷物を受け取る</li>
+<li><strong>具体的な用件の内容</strong></li>
+</ul>
+<h3 id="実際のwebアクセスで見る違い">実際のWebアクセスで見る違い</h3>
+<p>あなたが「https://example.com/login」にログインしようとする時:</p>
+<p><strong>ネットワーク層・トランスポート層（L3/L4）が見ているもの</strong></p>
+<pre tabindex="0"><code>送信元:あなたのPC（192.168.XXX.XXX）
+宛先:example.comのサーバー（203.0.XXX.XXX）
+ポート:443（HTTPS用）
+プロトコル:TCP
+</code></pre><p>→ <strong>「誰がどこに行こうとしているか」だけ</strong></p>
+<p><strong>アプリケーション層（L7）が見ているもの</strong></p>
+<pre tabindex="0"><code>POST /login HTTP/1.1
+Host: example.com
+Cookie: session_id=abc123
+
+username=admin&#39; OR &#39;1&#39;=&#39;1
+password=anything
+</code></pre><p>→ <strong>「何をしようとしているか」まで見える</strong>
+→ このSQLインジェクション攻撃を検知できる！</p>
+<h2 id="なぜwafが必要なのか">なぜWAFが必要なのか</h2>
+<h3 id="従来のファイアウォールでは防げない攻撃">従来のファイアウォールでは防げない攻撃</h3>
+<p>従来のファイアウォールは、以下のような判断しかできません:</p>
+<ul>
+<li>「正規の住所（IPアドレス）から来た」</li>
+<li>「正規のポート（80/443）を使っている」
+→ OK、通します</li>
+</ul>
+<p>しかし、<strong>攻撃者は正規のルートを使って攻撃してきます</strong>。</p>
+<h3 id="webアプリケーションを狙う主な攻撃">Webアプリケーションを狙う主な攻撃</h3>
+<p><strong>SQLインジェクション</strong><br>
+データベースに不正なSQL文を送り込む攻撃です。顧客情報の漏洩やデータの改ざんにつながります。</p>
+<p><strong>クロスサイトスクリプティング（XSS）</strong><br>
+悪意のあるJavaScriptコードを埋め込み、ユーザーのセッション情報を盗む攻撃です。</p>
+<p><strong>不正ログイン試行（ブルートフォース攻撃）</strong><br>
+大量のパスワードを試行してアカウントを乗っ取ろうとする攻撃です。</p>
+<p><strong>ゼロデイ攻撃</strong><br>
+まだパッチが提供されていない脆弱性を突く攻撃です。</p>
+<p><strong>APIへの攻撃</strong><br>
+過剰なリクエストでサービスを停止させたり、不正なデータを送り込んだりする攻撃です。</p>
+<p>これらの攻撃は、すべて<strong>正規のIPアドレスから、正規のポートを使って</strong>やってきます。<br>
+従来のファイアウォールでは、中身を見ることができないため、防ぐことができません。</p>
+<p><strong>WAFだけが中身を開けて検査できる</strong>のです。</p>
+<h2 id="まとめ従来のファイアウォールとwafは補完関係">まとめ:従来のファイアウォールとWAFは「補完関係」</h2>
+<h3 id="両方必要な理由">両方必要な理由</h3>
+<p>従来のファイアウォールとWAFは、<strong>役割が違います</strong>。<br>
+どちらか一方だけでは不十分で、両方を組み合わせることで、多層防御が実現できます。</p>
+<p><strong>従来のファイアウォール（L3/L4）</strong></p>
+<ul>
+<li>ネットワークレベルの不正アクセスをブロック</li>
+<li>不要なポートを閉じる</li>
+<li>基本的な通信制御</li>
+</ul>
+<p><strong>WAF（L7）</strong></p>
+<ul>
+<li>Webアプリケーションへの攻撃をブロック</li>
+<li>SQLインジェクション、XSSなどを防御</li>
+<li>アプリケーションレベルの保護</li>
+</ul>
+<h2 id="cloudflare-wafの強み">Cloudflare WAFの強み</h2>
+<p>Cloudflareは世界330以上の都市にデータセンターを展開し、常に世界中のトラフィック・リクエストを見ています。<br>
+だから機械学習がとても早く、新種の攻撃にも素早く対応・自動でアップデートされます。<br>
+ほかのWAFよりも優れているのは世界中でCloudflareが使用されているからですが、なぜCloudflareが使用されているかというと、
+機能充実ながら無料プランがあることや、有料プランも20ドルからという脅威のコスパではないでしょうか。<br>
+このコスパが利用客を呼び、この利用客が結局CloudflareのWAFの性能アップに還元されているとも言えますね。</p>
+<h3 id="これからのwebセキュリティ">これからのWebセキュリティ</h3>
+<p>Webアプリケーションへの攻撃は、今後ますます巧妙化していきます。「ファイアウォールがあるから大丈夫」という時代は終わりました。<br>
+<strong>WAFは「あると良い」ものではなく、「必須」のセキュリティ対策</strong>です。<br>
+特にCloudflare WAFは、強力な保護機能を持ちながら料金も非常に安価なので、手軽に導入できるのではないでしょうか。</p>
+<hr>
+<h3 id="注意事項">注意事項</h3>
+<p>Cloudflareの機能や価格の詳細は、公式サイトで最新情報をご確認ください。<br>
+<strong>最終的なセキュリティ対策の選択は、あなたのサイトの要件や予算を考慮したうえで、ご自身の責任で判断してください。</strong></p>
+
+    </div><div class="post_comments">
+  
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -152,9 +349,8 @@ Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて�
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
