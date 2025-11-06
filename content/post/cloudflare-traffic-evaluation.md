@@ -4,8 +4,6 @@ date = 2025-11-06
 summary = 'Cloudflareは、スコアリング、検出エンジン、ルールを組み合わせてトラフィックを評価します。Bot ScoreとWAF Attack Scoreの仕組み、Managed Rules・Custom Rules・Rate Limiting Rulesの役割、そして実際の判定プロセスを分かりやすく解説します。'
 +++
 
-# Cloudflareがどのようにトラフィックを評価するか
-
 Cloudflareを使い始めると、「どうやってトラフィックを評価しているんだろう?」と疑問に思うことがあるかもしれません。実は、Cloudflareは複数の仕組みを組み合わせて、リクエストが自動化されたものか、攻撃的なものか、それとも正常なものかを判断しています。
 
 この記事では、Cloudflareのトラフィック評価の仕組みについて解説します。
