@@ -8,6 +8,22 @@
     <language>ja</language>
     <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cloudflareがどのようにトラフィックを評価するか</title>
+      <link>https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/</guid>
+      <description>
+        
+          
+            Cloudflareは、スコアリング、検出エンジン、ルールを組み合わせてトラフィックを評価します。Bot ScoreとWAF Attack Scoreの仕組み、Managed Rules・Custom Rules・Rate Limiting Rulesの役割、そして実際の判定プロセスを分かりやすく解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？</title>
       <link>https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/</link>
       <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
