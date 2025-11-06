@@ -111,7 +111,7 @@
     <span class="post_date">
       Nov 6, 2025	  
     </span>
-    <span class="post_time"> · 11 分で読了</span>
+    <span class="post_time"> · 10 分で読了</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     共有する:
@@ -340,44 +340,6 @@ Cloudflareが攻撃手法を分析し、それに対応するルールを自動�
 </ul>
 <h3 id="4-オリジンサーバーへの転送">4. オリジンサーバーへの転送</h3>
 <p>セキュリティチェックをすべて通過したリクエストだけが、最終的にオリジンサーバーに転送されます。</p>
-<h3 id="実行順序の具体例">実行順序の具体例</h3>
-<p>例えば、以下のような設定がある場合:</p>
-<ol>
-<li>Custom Rule: Bot Score &lt; 30 かつ Verified Botでない かつ APIパスでない なら Block</li>
-<li>Rate Limiting Rule: 1分間に100リクエスト以上なら Challenge</li>
-<li>Managed Rule: SQLインジェクションパターンを検出したら Block</li>
-</ol>
-<p>リクエストの処理順序(悪意のあるボットの場合):</p>
-<ol>
-<li>まずBot Scoreが算出される(例: スコア5)</li>
-<li>Custom Ruleが評価される → Bot Score 5 &lt; 30、Verified Botではない、APIパスでもない → <strong>Block</strong></li>
-<li>この時点で終端アクションが実行されるため、Rate Limiting RuleやManaged Ruleは評価されない</li>
-</ol>
-<p>リクエストの処理順序(自社APIの場合):</p>
-<ol>
-<li>Bot Scoreが算出される(例: スコア5)</li>
-<li>Custom Ruleが評価される → Bot Score 5 &lt; 30 だが、APIパス(/api/)へのアクセス → <strong>マッチせず通過</strong></li>
-<li>Rate Limiting Ruleが評価される</li>
-<li>Managed Ruleが評価される</li>
-<li>問題がなければオリジンへ転送</li>
-</ol>
-<p>リクエストの処理順序(通常の人間の場合):</p>
-<ol>
-<li>Bot Scoreが算出される(例: スコア85)</li>
-<li>Custom Ruleは通過(Bot Score 85 &gt; 30)</li>
-<li>Rate Limiting Ruleが評価される</li>
-<li>Managed Ruleが評価される</li>
-<li>どこかでマッチすればそのアクションが実行され、マッチしなければオリジンへ転送</li>
-</ol>
-<h2 id="実務での活用方法">実務での活用方法</h2>
-<h3 id="ログでトラフィックを確認する">ログでトラフィックを確認する</h3>
-<p>Cloudflareダッシュボードで、どのようなリクエストがブロックされたか、どう評価されたかを確認できます:</p>
-<ul>
-<li><strong>Security Events</strong>: ブロックやチャレンジが発動したイベント</li>
-<li><strong>Bot Analytics</strong>: ボットトラフィックの詳細な分析</li>
-<li><strong>Security Analytics</strong>: 全体的なセキュリティイベントの概要</li>
-</ul>
-<p>これらのログを見ることで、実際にどんなトラフィックが来ているのか、設定したルールが正しく機能しているかを確認できます。</p>
 <h2 id="まとめ">まとめ</h2>
 <p>Cloudflareのトラフィック評価は、以下の要素を組み合わせた多層的な仕組みです:</p>
 <p><strong>スコアリング:</strong></p>

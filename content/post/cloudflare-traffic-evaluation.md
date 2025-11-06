@@ -210,45 +210,6 @@ Rate Limiting Rulesは、自動化された攻撃、特にブルートフォー�
 
 セキュリティチェックをすべて通過したリクエストだけが、最終的にオリジンサーバーに転送されます。
 
-### 実行順序の具体例
-
-例えば、以下のような設定がある場合:
-
-1. Custom Rule: Bot Score < 30 かつ Verified Botでない かつ APIパスでない なら Block
-2. Rate Limiting Rule: 1分間に100リクエスト以上なら Challenge
-3. Managed Rule: SQLインジェクションパターンを検出したら Block
-
-リクエストの処理順序(悪意のあるボットの場合):
-1. まずBot Scoreが算出される(例: スコア5)
-2. Custom Ruleが評価される → Bot Score 5 < 30、Verified Botではない、APIパスでもない → **Block**
-3. この時点で終端アクションが実行されるため、Rate Limiting RuleやManaged Ruleは評価されない
-
-リクエストの処理順序(自社APIの場合):
-1. Bot Scoreが算出される(例: スコア5)
-2. Custom Ruleが評価される → Bot Score 5 < 30 だが、APIパス(/api/)へのアクセス → **マッチせず通過**
-3. Rate Limiting Ruleが評価される
-4. Managed Ruleが評価される
-5. 問題がなければオリジンへ転送
-
-リクエストの処理順序(通常の人間の場合):
-1. Bot Scoreが算出される(例: スコア85)
-2. Custom Ruleは通過(Bot Score 85 > 30)
-3. Rate Limiting Ruleが評価される
-4. Managed Ruleが評価される
-5. どこかでマッチすればそのアクションが実行され、マッチしなければオリジンへ転送
-
-## 実務での活用方法
-
-### ログでトラフィックを確認する
-
-Cloudflareダッシュボードで、どのようなリクエストがブロックされたか、どう評価されたかを確認できます:
-
-- **Security Events**: ブロックやチャレンジが発動したイベント
-- **Bot Analytics**: ボットトラフィックの詳細な分析
-- **Security Analytics**: 全体的なセキュリティイベントの概要
-
-これらのログを見ることで、実際にどんなトラフィックが来ているのか、設定したルールが正しく機能しているかを確認できます。
-
 ## まとめ
 
 Cloudflareのトラフィック評価は、以下の要素を組み合わせた多層的な仕組みです:
