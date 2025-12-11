@@ -39,7 +39,7 @@
 
 
 
-<link rel="preload" href="https://nishizawa.pages.dev/css/styles.c6c6908ce3b206f53b076f2d9c9e872f4585edaf89889f80e9a2f06320784b82c817470441650bc717d0aa68c369ad71bd90f3abcd2062889cb2a935e6e8c91c.css" integrity = "sha512-xsaQjOOyBvU7B28tnJ6HL0WF7a&#43;JiJ&#43;A6aLwYyB4S4LIF0cEQWULxxfQqmjDaa1xvZDzq80gYoicsqk15ujJHA==" as="style" crossorigin="anonymous">
+<link rel="preload" href="https://nishizawa.pages.dev/css/styles.e0fc1bf012eeb7515f9f2bf3fdefa59904a55d59cf95facb5412ef40a08795b9de1f891a106e3e29c2c134cacb5e0f9e1eb8455a1215c6be3a51be50b8b66631.css" integrity = "sha512-4Pwb8BLut1Ffnyvz/e&#43;lmQSlXVnPlfrLVBLvQKCHlbneH4kaEG4&#43;KcLBNMrLXg&#43;eHrhFWhIVxr46Ub5QuLZmMQ==" as="style" crossorigin="anonymous">
 
 
 
@@ -47,7 +47,7 @@
 "sha512-pttwJDcAP5iVDwCNJe/yJCIvIGq5Z1EO6QLSuy7zQvUNxe84Jfr5CVveBMnSmMGFyR&#43;ibCuQUehSXVgF7REM6w==" crossorigin="anonymous">
 
 
-<link rel="stylesheet" type="text/css" href="https://nishizawa.pages.dev/css/styles.c6c6908ce3b206f53b076f2d9c9e872f4585edaf89889f80e9a2f06320784b82c817470441650bc717d0aa68c369ad71bd90f3abcd2062889cb2a935e6e8c91c.css" integrity="sha512-xsaQjOOyBvU7B28tnJ6HL0WF7a&#43;JiJ&#43;A6aLwYyB4S4LIF0cEQWULxxfQqmjDaa1xvZDzq80gYoicsqk15ujJHA==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://nishizawa.pages.dev/css/styles.e0fc1bf012eeb7515f9f2bf3fdefa59904a55d59cf95facb5412ef40a08795b9de1f891a106e3e29c2c134cacb5e0f9e1eb8455a1215c6be3a51be50b8b66631.css" integrity="sha512-4Pwb8BLut1Ffnyvz/e&#43;lmQSlXVnPlfrLVBLvQKCHlbneH4kaEG4&#43;KcLBNMrLXg&#43;eHrhFWhIVxr46Ub5QuLZmMQ==" crossorigin="anonymous">
 
   </head>
   <body
@@ -103,6 +103,348 @@
 <div class="grid-inverse wrap content">
   <div>
     <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://nishizawa.pages.dev/post/cf-score/" title="Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い">Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 11, 2025	  
+    </span>
+    <span class="post_time"> · 4 分で読了</span><span>&nbsp;· <a href='https://nishizawa.pages.dev/tags/cloudflare/' title="Cloudflare" class="post_tag button button_translucent">Cloudflare
+        </a><a href='https://nishizawa.pages.dev/tags/waf/' title="WAF" class="post_tag button button_translucent">WAF
+        </a><a href='https://nishizawa.pages.dev/tags/bot-management/' title="Bot Management" class="post_tag button button_translucent">Bot Management
+        </a><a href='https://nishizawa.pages.dev/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/' title="セキュリティ" class="post_tag button button_translucent">セキュリティ
+        </a><a href='https://nishizawa.pages.dev/tags/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91/' title="初心者向け" class="post_tag button button_translucent">初心者向け
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=Cloudflare%e3%81%ae%e3%80%8c%e3%82%b9%e3%82%b3%e3%82%a2%e3%80%8d%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b%ef%bc%9a%e3%83%9c%e3%83%83%e3%83%88%e3%82%b9%e3%82%b3%e3%82%a2%e3%81%a8%e6%94%bb%e6%92%83%e3%82%b9%e3%82%b3%e3%82%a2%e3%81%ae%e9%81%95%e3%81%84&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcf-score%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcf-score%2f&t=Cloudflare%e3%81%ae%e3%80%8c%e3%82%b9%e3%82%b3%e3%82%a2%e3%80%8d%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b%ef%bc%9a%e3%83%9c%e3%83%83%e3%83%88%e3%82%b9%e3%82%b3%e3%82%a2%e3%81%a8%e6%94%bb%e6%92%83%e3%82%b9%e3%82%b3%e3%82%a2%e3%81%ae%e9%81%95%e3%81%84" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/cf-score/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Cloudflareでセキュリティルールを設定する際、「スコア」という指標が登場しますが、実は**ボットスコア(Bot Score)<strong>と</strong>攻撃スコア(Attack Score)**という2種類のスコアがあります。名前が似ているため混同しやすいですが、それぞれ全く異なる目的で使用されています。この記事では、両者の違いと実際の活用方法について解説します。</p>
+          
+          <br>
+          <a href="https://nishizawa.pages.dev/post/cf-score/" title="続きを読む" class="excerpt_more button">続きを読む</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://nishizawa.pages.dev/post/log/" title="『ログを見たい』と言われたら？Cloudflareの4つのログの違い">『ログを見たい』と言われたら？Cloudflareの4つのログの違い</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 10, 2025	  
+    </span>
+    <span class="post_time"> · 4 分で読了</span><span>&nbsp;· <a href='https://nishizawa.pages.dev/tags/cloudflare/' title="Cloudflare" class="post_tag button button_translucent">Cloudflare
+        </a><a href='https://nishizawa.pages.dev/tags/%E3%83%AD%E3%82%B0/' title="ログ" class="post_tag button button_translucent">ログ
+        </a><a href='https://nishizawa.pages.dev/tags/analytics/' title="Analytics" class="post_tag button button_translucent">Analytics
+        </a><a href='https://nishizawa.pages.dev/tags/firewall/' title="Firewall" class="post_tag button button_translucent">Firewall
+        </a><a href='https://nishizawa.pages.dev/tags/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91/' title="初心者向け" class="post_tag button button_translucent">初心者向け
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=%e3%80%8e%e3%83%ad%e3%82%b0%e3%82%92%e8%a6%8b%e3%81%9f%e3%81%84%e3%80%8f%e3%81%a8%e8%a8%80%e3%82%8f%e3%82%8c%e3%81%9f%e3%82%89%ef%bc%9fCloudflare%e3%81%ae4%e3%81%a4%e3%81%ae%e3%83%ad%e3%82%b0%e3%81%ae%e9%81%95%e3%81%84&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2flog%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2flog%2f&t=%e3%80%8e%e3%83%ad%e3%82%b0%e3%82%92%e8%a6%8b%e3%81%9f%e3%81%84%e3%80%8f%e3%81%a8%e8%a8%80%e3%82%8f%e3%82%8c%e3%81%9f%e3%82%89%ef%bc%9fCloudflare%e3%81%ae4%e3%81%a4%e3%81%ae%e3%83%ad%e3%82%b0%e3%81%ae%e9%81%95%e3%81%84" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/log/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>営業担当やクライアントから「ログを確認してください」と言われたことはありませんか？この時、エンジニアの頭には「<strong>（どのログ？）</strong>」という疑問が浮かびます。依頼する側は「ログ＝過去の履歴全般」という感覚で言われますが、実は、Cloudflareには<strong>目的の異なる複数のログ</strong>が存在します。</p>
+          
+          <br>
+          <a href="https://nishizawa.pages.dev/post/log/" title="続きを読む" class="excerpt_more button">続きを読む</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://nishizawa.pages.dev/post/browser-integrity-check/" title="Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する">Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 5, 2025	  
+    </span>
+    <span class="post_time"> · 7 分で読了</span><span>&nbsp;· <a href='https://nishizawa.pages.dev/tags/cloudflare/' title="Cloudflare" class="post_tag button button_translucent">Cloudflare
+        </a><a href='https://nishizawa.pages.dev/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/' title="セキュリティ" class="post_tag button button_translucent">セキュリティ
+        </a><a href='https://nishizawa.pages.dev/tags/waf/' title="WAF" class="post_tag button button_translucent">WAF
+        </a><a href='https://nishizawa.pages.dev/tags/bot%E5%AF%BE%E7%AD%96/' title="Bot対策" class="post_tag button button_translucent">Bot対策
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=Cloudflare%e3%81%ae%e3%83%96%e3%83%a9%e3%82%a6%e3%82%b6%e6%95%b4%e5%90%88%e6%80%a7%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%a8%e3%81%af%ef%bc%9f%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e4%bd%bf%e3%81%84%e6%96%b9%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fbrowser-integrity-check%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fbrowser-integrity-check%2f&t=Cloudflare%e3%81%ae%e3%83%96%e3%83%a9%e3%82%a6%e3%82%b6%e6%95%b4%e5%90%88%e6%80%a7%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%a8%e3%81%af%ef%bc%9f%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8%e4%bd%bf%e3%81%84%e6%96%b9%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/browser-integrity-check/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Cloudflareのブラウザ整合性チェック(Browser Integrity Check)の仕組みと、実際の運用における注意点について解説します。</p>
+          
+          <br>
+          <a href="https://nishizawa.pages.dev/post/browser-integrity-check/" title="続きを読む" class="excerpt_more button">続きを読む</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://nishizawa.pages.dev/post/cloudflare-workers-beginner/" title="Cloudflare Workersが何者かを知る">Cloudflare Workersが何者かを知る</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Nov 12, 2025	  
+    </span>
+    <span class="post_time"> · 12 分で読了</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=Cloudflare%20Workers%e3%81%8c%e4%bd%95%e8%80%85%e3%81%8b%e3%82%92%e7%9f%a5%e3%82%8b&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-workers-beginner%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-workers-beginner%2f&t=Cloudflare%20Workers%e3%81%8c%e4%bd%95%e8%80%85%e3%81%8b%e3%82%92%e7%9f%a5%e3%82%8b" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/cloudflare-workers-beginner/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>「Workersって難しそう」と思っていませんか？実はサーバー不要で動くプログラムとして、様々な実務課題を解決できます。この記事では、Workers単体でできることを中心に、他の技術との比較も交えながら、初心者にも分かりやすく解説します。</p>
+          
+          <br>
+          <a href="https://nishizawa.pages.dev/post/cloudflare-workers-beginner/" title="続きを読む" class="excerpt_more button">続きを読む</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/" title="CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する">CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Nov 8, 2025	  
+    </span>
+    <span class="post_time"> · 9 分で読了</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=Cloudflare%e3%81%af%e3%81%aa%e3%81%9cDNS%e5%a4%89%e6%9b%b4%e3%81%8c%e5%bf%85%e8%a6%81%ef%bc%9fCDN%e3%81%a8DNS%e3%81%ae%e9%96%a2%e4%bf%82%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-dns-cdn-relationship%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fcloudflare-dns-cdn-relationship%2f&t=Cloudflare%e3%81%af%e3%81%aa%e3%81%9cDNS%e5%a4%89%e6%9b%b4%e3%81%8c%e5%bf%85%e8%a6%81%ef%bc%9fCDN%e3%81%a8DNS%e3%81%ae%e9%96%a2%e4%bf%82%e3%82%92%e7%90%86%e8%a7%a3%e3%81%99%e3%82%8b" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>CloudflareはCDNだと聞いていたのに、導入にはDNS変更が必要？CDNとDNSの関係、なぜDNS変更が必要なのかを、わかりやすく解説します。フルセットアップとパーシャルセットアップの違いも紹介。</p>
+          
+          <br>
+          <a href="https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/" title="続きを読む" class="excerpt_more button">続きを読む</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
         <li class="post_item">
   <div class="excerpt">
     <div class="excerpt_header">
@@ -428,203 +770,27 @@
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nishizawa.pages.dev/post/what-is-cloudflare/" title="Cloudflare（クラウドフレア）とは？">Cloudflare（クラウドフレア）とは？</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 29, 2025	  
-    </span>
-    <span class="post_time"> · 7 分で読了</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    共有する:
-    <a href="https://twitter.com/intent/tweet?text=Cloudflare%ef%bc%88%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%95%e3%83%ac%e3%82%a2%ef%bc%89%e3%81%a8%e3%81%af%ef%bc%9f&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fwhat-is-cloudflare%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fwhat-is-cloudflare%2f&t=Cloudflare%ef%bc%88%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%95%e3%83%ac%e3%82%a2%ef%bc%89%e3%81%a8%e3%81%af%ef%bc%9f" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://nishizawa.pages.dev/post/what-is-cloudflare/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>インターネットを使っている人なら誰もが知らず知らずのうちにお世話になっている「Cloudflare」。ウェブサイトを速く、安全にする縁の下の力持ちです。</p>
-          
-          <br>
-          <a href="https://nishizawa.pages.dev/post/what-is-cloudflare/" title="続きを読む" class="excerpt_more button">続きを読む</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nishizawa.pages.dev/post/blog-setup/" title="Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）">Cloudflare Pages + Hugoでブログ構築（誰でもできます）</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 28, 2025	  
-    </span>
-    <span class="post_time"> · 3 分で読了</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    共有する:
-    <a href="https://twitter.com/intent/tweet?text=Cloudflare%20Pages%20%2b%20Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e6%a7%8b%e7%af%89%ef%bc%88%e8%aa%b0%e3%81%a7%e3%82%82%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%ef%bc%89&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fblog-setup%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fblog-setup%2f&t=Cloudflare%20Pages%20%2b%20Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e6%a7%8b%e7%af%89%ef%bc%88%e8%aa%b0%e3%81%a7%e3%82%82%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%ef%bc%89" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://nishizawa.pages.dev/post/blog-setup/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>今後の情報発信をするのに、ノートとかASPサービスも検討したのですが、Cloudflareをメインに扱うなら、Cloudflareのテクノロジーが使えるものでやったほうがいいかな、と思い「Cloudflare Pages」を使ってみることにしました。  &hellip;</p>
-          
-          <br>
-          <a href="https://nishizawa.pages.dev/post/blog-setup/" title="続きを読む" class="excerpt_more button">続きを読む</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nishizawa.pages.dev/post/my-first-post/" title="最初の記事">最初の記事</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 27, 2025	  
-    </span>
-    <span class="post_time"> · 1 分で読了</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    共有する:
-    <a href="https://twitter.com/intent/tweet?text=%e6%9c%80%e5%88%9d%e3%81%ae%e8%a8%98%e4%ba%8b&url=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fmy-first-post%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnishizawa.pages.dev%2fpost%2fmy-first-post%2f&t=%e6%9c%80%e5%88%9d%e3%81%ae%e8%a8%98%e4%ba%8b" class="facebook" title="共有する Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="共有する LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://nishizawa.pages.dev/post/my-first-post/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>これは私の最初のブログ記事です!
-Hugoを使ってブログを作りました。</p>
-          
-          <br>
-          <a href="https://nishizawa.pages.dev/post/my-first-post/" title="続きを読む" class="excerpt_more button">続きを読む</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/post/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/post/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/post/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
       </li>
     </ul>
   </div>
@@ -649,6 +815,21 @@ Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて�
     <h2 class="mt-4">最近の投稿</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nishizawa.pages.dev/post/cf-score/" class="nav-link" title="Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い">Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</a>
+      </li>
+      <li>
+        <a href="https://nishizawa.pages.dev/post/log/" class="nav-link" title="『ログを見たい』と言われたら？Cloudflareの4つのログの違い">『ログを見たい』と言われたら？Cloudflareの4つのログの違い</a>
+      </li>
+      <li>
+        <a href="https://nishizawa.pages.dev/post/browser-integrity-check/" class="nav-link" title="Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する">Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する</a>
+      </li>
+      <li>
+        <a href="https://nishizawa.pages.dev/post/cloudflare-workers-beginner/" class="nav-link" title="Cloudflare Workersが何者かを知る">Cloudflare Workersが何者かを知る</a>
+      </li>
+      <li>
+        <a href="https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/" class="nav-link" title="CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する">CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する</a>
+      </li>
+      <li>
         <a href="https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/" class="nav-link" title="Cloudflareがどのようにトラフィックを評価するか">Cloudflareがどのようにトラフィックを評価するか</a>
       </li>
       <li>
@@ -657,22 +838,58 @@ Cloudflareの様々な情報を「もっと分かりやすく」伝えたくて�
       <li>
         <a href="https://nishizawa.pages.dev/post/cloudflare-plan-guide/" class="nav-link" title="Cloudflareのプラン選び:経験者が語る実践的なガイド">Cloudflareのプラン選び:経験者が語る実践的なガイド</a>
       </li>
-      <li>
-        <a href="https://nishizawa.pages.dev/post/cloudflare-cache2/" class="nav-link" title="Cloudflareに個人情報はキャッシュされる？安全性を解説">Cloudflareに個人情報はキャッシュされる？安全性を解説</a>
-      </li>
-      <li>
-        <a href="https://nishizawa.pages.dev/post/cloudflare-cache/" class="nav-link" title="Cloudflare（クラウドフレア）のキャッシュを理解する">Cloudflare（クラウドフレア）のキャッシュを理解する</a>
-      </li>
-      <li>
-        <a href="https://nishizawa.pages.dev/post/what-is-cloudflare/" class="nav-link" title="Cloudflare（クラウドフレア）とは？">Cloudflare（クラウドフレア）とは？</a>
-      </li>
-      <li>
-        <a href="https://nishizawa.pages.dev/post/blog-setup/" class="nav-link" title="Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）">Cloudflare Pages + Hugoでブログ構築（誰でもできます）</a>
-      </li>
-      <li>
-        <a href="https://nishizawa.pages.dev/post/my-first-post/" class="nav-link" title="最初の記事">最初の記事</a>
-      </li>
     </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">タグ</h2>
+      <nav class="tags_nav">
+        <a href='https://nishizawa.pages.dev/tags/cloudflare/' class="post_tag button button_translucent" title="cloudflare">
+          CLOUDFLARE
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/waf/' class="post_tag button button_translucent" title="waf">
+          WAF
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/' class="post_tag button button_translucent" title="セキュリティ">
+          セキュリティ
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91/' class="post_tag button button_translucent" title="初心者向け">
+          初心者向け
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/analytics/' class="post_tag button button_translucent" title="analytics">
+          ANALYTICS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/bot-management/' class="post_tag button button_translucent" title="bot management">
+          BOT MANAGEMENT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/bot%E5%AF%BE%E7%AD%96/' class="post_tag button button_translucent" title="bot対策">
+          BOT対策
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/firewall/' class="post_tag button button_translucent" title="firewall">
+          FIREWALL
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nishizawa.pages.dev/tags/%E3%83%AD%E3%82%B0/' class="post_tag button button_translucent" title="ログ">
+          ログ
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
   </section>
 </aside>
 

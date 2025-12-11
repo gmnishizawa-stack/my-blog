@@ -1,0 +1,18 @@
+/* コードブロックの文字色を白に変更 */
+pre code,
+pre,
+code {
+  color: #ffffff !important;
+}
+
+/* コードブロックの背景色を確認（必要に応じて調整） */
+pre {
+  background-color: #1e1e1e !important;
+}
+
+/* インラインコードも白に */
+p code,
+li code {
+  color: #ffffff !important;
+  background-color: #2d2d2d !important;
+}

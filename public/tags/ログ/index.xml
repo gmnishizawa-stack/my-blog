@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ログ on Nishizawa Pages | Cloudflare Guide</title>
+    <link>https://nishizawa.pages.dev/tags/%E3%83%AD%E3%82%B0/</link>
+    <description>Recent content in ログ on Nishizawa Pages | Cloudflare Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/tags/%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
+      <link>https://nishizawa.pages.dev/post/log/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/log/</guid>
+      <description>
+        
+          
+            営業担当やクライアントから「ログを確認してください」と言われたことはありませんか？この時、エンジニアの頭には「**（どのログ？）**」という疑問が浮かびます。依頼する側は「ログ＝過去の履歴全般」という感覚で言われますが、実は、Cloudflareには**目的の異なる複数のログ**が存在します。
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,87 @@
     <description>Recent content in Posts on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</title>
+      <link>https://nishizawa.pages.dev/post/cf-score/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cf-score/</guid>
+      <description>
+        
+          
+            Cloudflareでセキュリティルールを設定する際、「スコア」という指標が登場しますが、実は**ボットスコア(Bot Score)**と**攻撃スコア(Attack Score)**という2種類のスコアがあります。名前が似ているため混同しやすいですが、それぞれ全く異なる目的で使用されています。この記事では、両者の違いと実際の活用方法について解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
+      <link>https://nishizawa.pages.dev/post/log/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/log/</guid>
+      <description>
+        
+          
+            営業担当やクライアントから「ログを確認してください」と言われたことはありませんか？この時、エンジニアの頭には「**（どのログ？）**」という疑問が浮かびます。依頼する側は「ログ＝過去の履歴全般」という感覚で言われますが、実は、Cloudflareには**目的の異なる複数のログ**が存在します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する</title>
+      <link>https://nishizawa.pages.dev/post/browser-integrity-check/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/browser-integrity-check/</guid>
+      <description>
+        
+          
+            Cloudflareのブラウザ整合性チェック(Browser Integrity Check)の仕組みと、実際の運用における注意点について解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflare Workersが何者かを知る</title>
+      <link>https://nishizawa.pages.dev/post/cloudflare-workers-beginner/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cloudflare-workers-beginner/</guid>
+      <description>
+        
+          
+            「Workersって難しそう」と思っていませんか？実はサーバー不要で動くプログラムとして、様々な実務課題を解決できます。この記事では、Workers単体でできることを中心に、他の技術との比較も交えながら、初心者にも分かりやすく解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する</title>
+      <link>https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/</guid>
+      <description>
+        
+          
+            CloudflareはCDNだと聞いていたのに、導入にはDNS変更が必要？CDNとDNSの関係、なぜDNS変更が必要なのかを、わかりやすく解説します。フルセットアップとパーシャルセットアップの違いも紹介。
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Cloudflareがどのようにトラフィックを評価するか</title>
       <link>https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/</link>
