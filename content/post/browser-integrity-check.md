@@ -1,10 +1,9 @@
 ---
 title: "Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する"
 date: 2025-12-05
-draft: false
 tags: ["Cloudflare", "セキュリティ", "WAF", "Bot対策"]
 categories: ["Cloudflare"]
-description: "Cloudflareのブラウザ整合性チェック(Browser Integrity Check)の仕組みと、実際の運用における注意点について解説します。"
+summary: "Cloudflareのブラウザ整合性チェック(Browser Integrity Check)の仕組みと、実際の運用における注意点について解説します。"
 ---
 
 Cloudflareの管理画面で「ブラウザ整合性チェック(Browser Integrity Check)」という項目を見たことはありませんか？デフォルトで有効になっているこの機能ですが、実際に何をチェックしているのか、いつオンにすべきか、よく分からないまま使っている方も多いのではないでしょうか。
