@@ -2,21 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://nishizawa.pages.dev/</link>
+    <link>https://ynishizawa.com/</link>
     <description>Recent content on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ynishizawa.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</title>
-      <link>https://nishizawa.pages.dev/post/cf-score/</link>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <title>Cloudflareのキャッシュで更新が反映されない！ダッシュボードにアクセスできない時の対処法</title>
+      <link>https://ynishizawa.com/post/cache-bypass-without-dashboard/</link>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cf-score/</guid>
+      <guid>https://ynishizawa.com/post/cache-bypass-without-dashboard/</guid>
       <description>
         
           
-            Cloudflareでセキュリティルールを設定する際、「スコア」という指標が登場しますが、実は**ボットスコア(Bot Score)**と**攻撃スコア(Attack Score)**という2種類のスコアがあります。名前が似ているため混同しやすいですが、それぞれ全く異なる目的で使用されています。この記事では、両者の違いと実際の活用方法について解説します。
+            Cloudflareを導入しているサイトで、ファイルを更新したのに反映されない...原因がキャッシュだと分かっているのに、ダッシュボードにログインできない、または権限がないという状況はありませんか？そんな時でも使える実践的な解決方法を2つ紹介します。URLパラメータの追加とファイル名変更、それぞれの使い分けと具体的な実装方法を解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</title>
+      <link>https://ynishizawa.com/post/cf-score/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ynishizawa.com/post/cf-score/</guid>
+      <description>
+        
+          
+            Cloudflareでセキュリティルールを設定する際、「スコア」という指標が登場しますが、実はボットスコア(Bot Score)と攻撃スコア(Attack Score)という2種類のスコアがあります。名前が似ているため混同しやすいですが、それぞれ全く異なる目的で使用されています。この記事では、両者の違いと実際の活用方法について解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareの理解がAI活用で大幅にスピードアップ！</title>
+      <link>https://ynishizawa.com/post/aiforcloudflare/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ynishizawa.com/post/aiforcloudflare/</guid>
+      <description>
+        
+          
+            Cloudflareを業務で扱っていると、「情報がすべて英語」という壁に必ず直面します。しかしAIの登場により、この状況は大きく変わりました。単なる翻訳を超えた理解の深化、ルール設定の検証、ログ分析の効率化など、実際に私が日々の運用で活用している具体的な方法をご紹介します。
           
           
         
@@ -25,10 +57,10 @@
     
     <item>
       <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
-      <link>https://nishizawa.pages.dev/post/log/</link>
+      <link>https://ynishizawa.com/post/log/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/log/</guid>
+      <guid>https://ynishizawa.com/post/log/</guid>
       <description>
         
           
@@ -41,10 +73,10 @@
     
     <item>
       <title>Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する</title>
-      <link>https://nishizawa.pages.dev/post/browser-integrity-check/</link>
+      <link>https://ynishizawa.com/post/browser-integrity-check/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/browser-integrity-check/</guid>
+      <guid>https://ynishizawa.com/post/browser-integrity-check/</guid>
       <description>
         
           
@@ -57,10 +89,10 @@
     
     <item>
       <title>Cloudflare Workersが何者かを知る</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-workers-beginner/</link>
+      <link>https://ynishizawa.com/post/cloudflare-workers-beginner/</link>
       <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-workers-beginner/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-workers-beginner/</guid>
       <description>
         
           
@@ -73,10 +105,10 @@
     
     <item>
       <title>CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/</link>
+      <link>https://ynishizawa.com/post/cloudflare-dns-cdn-relationship/</link>
       <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-dns-cdn-relationship/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-dns-cdn-relationship/</guid>
       <description>
         
           
@@ -89,10 +121,10 @@
     
     <item>
       <title>Cloudflareがどのようにトラフィックを評価するか</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/</link>
+      <link>https://ynishizawa.com/post/cloudflare-traffic-evaluation/</link>
       <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-traffic-evaluation/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-traffic-evaluation/</guid>
       <description>
         
           
@@ -105,10 +137,10 @@
     
     <item>
       <title>従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？</title>
-      <link>https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/</link>
+      <link>https://ynishizawa.com/post/firewall-vs-waf-cloudflare/</link>
       <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/firewall-vs-waf-cloudflare/</guid>
+      <guid>https://ynishizawa.com/post/firewall-vs-waf-cloudflare/</guid>
       <description>
         
           
@@ -121,10 +153,10 @@
     
     <item>
       <title>Cloudflareのプラン選び:経験者が語る実践的なガイド</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-plan-guide/</link>
+      <link>https://ynishizawa.com/post/cloudflare-plan-guide/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-plan-guide/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-plan-guide/</guid>
       <description>
         
           
@@ -137,10 +169,10 @@
     
     <item>
       <title>Cloudflareに個人情報はキャッシュされる？安全性を解説</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-cache2/</link>
+      <link>https://ynishizawa.com/post/cloudflare-cache2/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-cache2/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-cache2/</guid>
       <description>
         
           
@@ -153,10 +185,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）のキャッシュを理解する</title>
-      <link>https://nishizawa.pages.dev/post/cloudflare-cache/</link>
+      <link>https://ynishizawa.com/post/cloudflare-cache/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/cloudflare-cache/</guid>
+      <guid>https://ynishizawa.com/post/cloudflare-cache/</guid>
       <description>
         
           
@@ -169,10 +201,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）とは？</title>
-      <link>https://nishizawa.pages.dev/post/what-is-cloudflare/</link>
+      <link>https://ynishizawa.com/post/what-is-cloudflare/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/what-is-cloudflare/</guid>
+      <guid>https://ynishizawa.com/post/what-is-cloudflare/</guid>
       <description>
         
           
@@ -185,10 +217,10 @@
     
     <item>
       <title>Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）</title>
-      <link>https://nishizawa.pages.dev/post/blog-setup/</link>
+      <link>https://ynishizawa.com/post/blog-setup/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/blog-setup/</guid>
+      <guid>https://ynishizawa.com/post/blog-setup/</guid>
       <description>
         
           
@@ -201,10 +233,10 @@
     
     <item>
       <title>最初の記事</title>
-      <link>https://nishizawa.pages.dev/post/my-first-post/</link>
+      <link>https://ynishizawa.com/post/my-first-post/</link>
       <pubDate>Mon, 27 Oct 2025 13:41:43 +0900</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/my-first-post/</guid>
+      <guid>https://ynishizawa.com/post/my-first-post/</guid>
       <description>
         
           

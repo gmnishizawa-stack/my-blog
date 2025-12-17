@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analytics on Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://nishizawa.pages.dev/tags/analytics/</link>
+    <link>https://ynishizawa.com/tags/analytics/</link>
     <description>Recent content in Analytics on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nishizawa.pages.dev/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ynishizawa.com/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
-      <link>https://nishizawa.pages.dev/post/log/</link>
+      <link>https://ynishizawa.com/post/log/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://nishizawa.pages.dev/post/log/</guid>
+      <guid>https://ynishizawa.com/post/log/</guid>
       <description>
         
           

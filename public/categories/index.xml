@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://nishizawa.pages.dev/categories/</link>
+    <link>https://ynishizawa.com/categories/</link>
     <description>Recent content in Categories on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language><atom:link href="https://nishizawa.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language><atom:link href="https://ynishizawa.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
