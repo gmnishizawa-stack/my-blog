@@ -9,7 +9,7 @@ summary: "CloudflareのWAF機能を使う上で必ず目にする「マネージ
 
 ## マネージドルールとは
 
-Cloudflareの公式ドキュメントによると、マネージドルールは**「Cloudflareが事前に設定・提供するルールセット」**です。
+Cloudflareの公式ドキュメントによると、マネージドルールは**「Cloudflareが事前に設定・提供するルールセット」**です
 
 > "Managed rulesets are preconfigured rulesets provided by Cloudflare that you can deploy. Only Cloudflare can modify these rulesets."
 > 

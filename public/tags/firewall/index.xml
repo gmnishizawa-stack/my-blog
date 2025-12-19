@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firewall on Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://ynishizawa.com/tags/firewall/</link>
+    <link>http://localhost:1313/tags/firewall/</link>
     <description>Recent content in Firewall on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ynishizawa.com/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
-      <link>https://ynishizawa.com/post/log/</link>
+      <link>http://localhost:1313/post/log/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/log/</guid>
+      <guid>http://localhost:1313/post/log/</guid>
       <description>
         
           

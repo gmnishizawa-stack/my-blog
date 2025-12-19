@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>マネージドルール on Nishizawa Pages | Cloudflare Guide</title>
+    <link>http://localhost:1313/tags/%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%89%E3%83%AB%E3%83%BC%E3%83%AB/</link>
+    <description>Recent content in マネージドルール on Nishizawa Pages | Cloudflare Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%89%E3%83%AB%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflareのマネージドルールとは？仕組みを公式ドキュメントから理解する</title>
+      <link>http://localhost:1313/post/cloudflare-rule/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/cloudflare-rule/</guid>
+      <description>
+        
+          
+            CloudflareのWAF機能を使う上で必ず目にする「マネージドルール」。一体どんな仕組みで、どう更新されているのか？日々の実装・運用業務で必要になる正確な理解を、公式ドキュメントを参照しながら整理しました。自動更新のサイクルから、カスタマイズの自由度、デフォルト設定の意図まで、実務で役立つポイントを解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

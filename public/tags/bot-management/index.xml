@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bot Management on Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://ynishizawa.com/tags/bot-management/</link>
+    <link>http://localhost:1313/tags/bot-management/</link>
     <description>Recent content in Bot Management on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ynishizawa.com/tags/bot-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/bot-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</title>
-      <link>https://ynishizawa.com/post/cf-score/</link>
+      <link>http://localhost:1313/post/cf-score/</link>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cf-score/</guid>
+      <guid>http://localhost:1313/post/cf-score/</guid>
       <description>
         
           

@@ -2,21 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nishizawa Pages | Cloudflare Guide</title>
-    <link>https://ynishizawa.com/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Nishizawa Pages | Cloudflare Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ynishizawa.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cloudflareのキャッシュで更新が反映されない！ダッシュボードにアクセスできない時の対処法</title>
-      <link>https://ynishizawa.com/post/cache-bypass-without-dashboard/</link>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <title>Cloudflareのマネージドルールとは？仕組みを公式ドキュメントから理解する</title>
+      <link>http://localhost:1313/post/cloudflare-rule/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cache-bypass-without-dashboard/</guid>
+      <guid>http://localhost:1313/post/cloudflare-rule/</guid>
       <description>
         
           
-            Cloudflareを導入しているサイトで、ファイルを更新したのに反映されない...原因がキャッシュだと分かっているのに、ダッシュボードにログインできない、または権限がないという状況はありませんか？そんな時でも使える実践的な解決方法を2つ紹介します。URLパラメータの追加とファイル名変更、それぞれの使い分けと具体的な実装方法を解説します。
+            CloudflareのWAF機能を使う上で必ず目にする「マネージドルール」。一体どんな仕組みで、どう更新されているのか？日々の実装・運用業務で必要になる正確な理解を、公式ドキュメントを参照しながら整理しました。自動更新のサイクルから、カスタマイズの自由度、デフォルト設定の意図まで、実務で役立つポイントを解説します。
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareのキャッシュで更新が反映されない！ダッシュボードにアクセスできない時の対処法</title>
+      <link>http://localhost:1313/post/cache-bypass-without-dashboard/</link>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/cache-bypass-without-dashboard/</guid>
+      <description>
+        
+          
+            Cloudflareを導入しているサイトで、ファイルを更新したのに反映されない...原因がキャッシュだと分かっているのに、ダッシュボードにログインできない、または権限がないという状況はありませんか？そんな時でも使える実践的な解決方法を紹介します。
           
           
         
@@ -25,10 +41,10 @@
     
     <item>
       <title>Cloudflareの「スコア」を理解する：ボットスコアと攻撃スコアの違い</title>
-      <link>https://ynishizawa.com/post/cf-score/</link>
+      <link>http://localhost:1313/post/cf-score/</link>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cf-score/</guid>
+      <guid>http://localhost:1313/post/cf-score/</guid>
       <description>
         
           
@@ -41,10 +57,10 @@
     
     <item>
       <title>Cloudflareの理解がAI活用で大幅にスピードアップ！</title>
-      <link>https://ynishizawa.com/post/aiforcloudflare/</link>
+      <link>http://localhost:1313/post/aiforcloudflare/</link>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/aiforcloudflare/</guid>
+      <guid>http://localhost:1313/post/aiforcloudflare/</guid>
       <description>
         
           
@@ -57,10 +73,10 @@
     
     <item>
       <title>『ログを見たい』と言われたら？Cloudflareの4つのログの違い</title>
-      <link>https://ynishizawa.com/post/log/</link>
+      <link>http://localhost:1313/post/log/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/log/</guid>
+      <guid>http://localhost:1313/post/log/</guid>
       <description>
         
           
@@ -73,10 +89,10 @@
     
     <item>
       <title>Cloudflareのブラウザ整合性チェックとは？仕組みと使い方を理解する</title>
-      <link>https://ynishizawa.com/post/browser-integrity-check/</link>
+      <link>http://localhost:1313/post/browser-integrity-check/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/browser-integrity-check/</guid>
+      <guid>http://localhost:1313/post/browser-integrity-check/</guid>
       <description>
         
           
@@ -89,10 +105,10 @@
     
     <item>
       <title>Cloudflare Workersが何者かを知る</title>
-      <link>https://ynishizawa.com/post/cloudflare-workers-beginner/</link>
+      <link>http://localhost:1313/post/cloudflare-workers-beginner/</link>
       <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-workers-beginner/</guid>
+      <guid>http://localhost:1313/post/cloudflare-workers-beginner/</guid>
       <description>
         
           
@@ -105,10 +121,10 @@
     
     <item>
       <title>CloudflareはなぜDNS変更が必要？CDNとDNSの関係を理解する</title>
-      <link>https://ynishizawa.com/post/cloudflare-dns-cdn-relationship/</link>
+      <link>http://localhost:1313/post/cloudflare-dns-cdn-relationship/</link>
       <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-dns-cdn-relationship/</guid>
+      <guid>http://localhost:1313/post/cloudflare-dns-cdn-relationship/</guid>
       <description>
         
           
@@ -121,10 +137,10 @@
     
     <item>
       <title>Cloudflareがどのようにトラフィックを評価するか</title>
-      <link>https://ynishizawa.com/post/cloudflare-traffic-evaluation/</link>
+      <link>http://localhost:1313/post/cloudflare-traffic-evaluation/</link>
       <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-traffic-evaluation/</guid>
+      <guid>http://localhost:1313/post/cloudflare-traffic-evaluation/</guid>
       <description>
         
           
@@ -137,10 +153,10 @@
     
     <item>
       <title>従来のファイアウォールとWAFの違い・Cloudflare WAFの強みは？</title>
-      <link>https://ynishizawa.com/post/firewall-vs-waf-cloudflare/</link>
+      <link>http://localhost:1313/post/firewall-vs-waf-cloudflare/</link>
       <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/firewall-vs-waf-cloudflare/</guid>
+      <guid>http://localhost:1313/post/firewall-vs-waf-cloudflare/</guid>
       <description>
         
           
@@ -153,10 +169,10 @@
     
     <item>
       <title>Cloudflareのプラン選び:経験者が語る実践的なガイド</title>
-      <link>https://ynishizawa.com/post/cloudflare-plan-guide/</link>
+      <link>http://localhost:1313/post/cloudflare-plan-guide/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-plan-guide/</guid>
+      <guid>http://localhost:1313/post/cloudflare-plan-guide/</guid>
       <description>
         
           
@@ -169,10 +185,10 @@
     
     <item>
       <title>Cloudflareに個人情報はキャッシュされる？安全性を解説</title>
-      <link>https://ynishizawa.com/post/cloudflare-cache2/</link>
+      <link>http://localhost:1313/post/cloudflare-cache2/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-cache2/</guid>
+      <guid>http://localhost:1313/post/cloudflare-cache2/</guid>
       <description>
         
           
@@ -185,10 +201,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）のキャッシュを理解する</title>
-      <link>https://ynishizawa.com/post/cloudflare-cache/</link>
+      <link>http://localhost:1313/post/cloudflare-cache/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/cloudflare-cache/</guid>
+      <guid>http://localhost:1313/post/cloudflare-cache/</guid>
       <description>
         
           
@@ -201,10 +217,10 @@
     
     <item>
       <title>Cloudflare（クラウドフレア）とは？</title>
-      <link>https://ynishizawa.com/post/what-is-cloudflare/</link>
+      <link>http://localhost:1313/post/what-is-cloudflare/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/what-is-cloudflare/</guid>
+      <guid>http://localhost:1313/post/what-is-cloudflare/</guid>
       <description>
         
           
@@ -217,10 +233,10 @@
     
     <item>
       <title>Cloudflare Pages &#43; Hugoでブログ構築（誰でもできます）</title>
-      <link>https://ynishizawa.com/post/blog-setup/</link>
+      <link>http://localhost:1313/post/blog-setup/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ynishizawa.com/post/blog-setup/</guid>
+      <guid>http://localhost:1313/post/blog-setup/</guid>
       <description>
         
           
@@ -233,10 +249,10 @@
     
     <item>
       <title>最初の記事</title>
-      <link>https://ynishizawa.com/post/my-first-post/</link>
+      <link>http://localhost:1313/post/my-first-post/</link>
       <pubDate>Mon, 27 Oct 2025 13:41:43 +0900</pubDate>
       
-      <guid>https://ynishizawa.com/post/my-first-post/</guid>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
       <description>
         
           
