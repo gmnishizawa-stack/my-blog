@@ -56,8 +56,8 @@ DNS「あなたのサーバー（192.0.XXX.XXX）に行ってください」
   　↓  
 結果：CDN機能もWAFも働かない  
 
-**DNS変更後（Cloudflare導入）**
-  `
+**DNS変更後（Cloudflare導入）**  
+  
 訪問者「example.comに行きたい」  
   　↓  
 Cloudflare DNS「Cloudflareのサーバー（104.16.XXX.XXX）に行ってください」  
