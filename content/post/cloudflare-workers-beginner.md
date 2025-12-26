@@ -19,11 +19,9 @@ summary = '「Workersって難しそう」と思っていませんか？実は�
 
 この記事では、「Workersって何？」から始めて、実際にどんなことができるのか、なぜ選ばれるのかを、できるだけ分かりやすく解説します。
 
-## Workersは「サーバーレスの便利屋さん」
+## Workersとは？
 
-先に結論を言うと、Cloudflare Workersは**「サーバーレスの便利屋さん」**です。
-
-### Workersとは？
+#先に結論を言うと、Cloudflare Workersは「サーバーレスの便利屋さん」です。
 
 **Cloudflare Workers**は、Cloudflareが提供する「サーバーいらずでプログラムを動かせるサービス」です。
 
