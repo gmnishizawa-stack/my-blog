@@ -1,6 +1,6 @@
 baseURL = "https://ynishizawa.com/"
 languageCode = 'ja'
-title = 'Nishizawa Pages | Cloudflare Guide'
+title = 'Nishizawa Pages'
 defaultContentLanguage = 'ja' 
 theme = 'clarity'
 hasCJKLanguage = true
@@ -9,7 +9,7 @@ summaryLength = 50
 [params]
   introDescription = """
   Cloudflareパートナー企業でCloudflareの導入・運用のサポートをしています西澤です。  
-  インターネットセキュリティに関する様々な疑問を「もっと分かりやすく」伝えたくて、このブログを個人的に運営しています。  
+  インターネットセキュリティに関する様々な疑問を「もっと分かりやすく」伝えたくて、この「Nishizawa Pages」を個人的に運営しています。  
   非エンジニアの視点で、わかりやすい言葉を心がけています。  
 [ご連絡はこちら（Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
   """
