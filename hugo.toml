@@ -8,7 +8,7 @@ summaryLength = 50
 
 [params]
   introDescription = """
-  Cloudflareパートナー企業でCloudflareの導入・運用のサポートをしています西澤です。  
+  Cloudflareパートナー企業でCloudflareの導入・運用のサポートをしています。  
   インターネットセキュリティに関する様々な疑問を「もっと分かりやすく」伝えたくて、この「Nishizawa Pages」を個人的に運営しています。  
   非エンジニアの視点で、わかりやすい言葉を心がけています。  
 [ご連絡はこちら（Twitter）からどうぞ](https://twitter.com/ctO5lSnpzpWNOz5)
@@ -19,7 +19,7 @@ summaryLength = 50
   enable = true
   
 [params.author]
-  name = "Nishizawa"
+  name = "Nishizawa(西澤)"
   photo = "/images/avatar.jpg"
 
 [params.social]
