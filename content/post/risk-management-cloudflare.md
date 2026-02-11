@@ -1,10 +1,8 @@
 ---
 title: "Cloudflare運用で学ぶリスクマネジメント入門"
 date: 2026-02-11
-draft: false
 tags: ["Cloudflare", "セキュリティ", "リスクマネジメント", "運用管理"]
-categories: ["技術解説"]
-description: "リスクマネジメントの基本用語を、Cloudflareの実務と結びつけてわかりやすく解説します"
+summary = 'リスクマネジメントの基本用語を、Cloudflareの実務と結びつけてわかりやすく解説します'
 ---
 
 ## はじめに
