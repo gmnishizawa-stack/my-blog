@@ -4,7 +4,7 @@ date = "2026-06-15"
 summary = "Cloudflareには「Turnstile」と「Managed Challenge」という2つのボット対策の仕組みがあります。見た目は似ていても、設計思想や使いどころは異なります。サイト管理者の視点からその違いとメリット・デメリットを整理します。"
 +++
 
-Cloudflareを使ってサイトを保護していると、「Turnstile」と「Managed Challenge」という2つの仕組みに出会います。  
+Cloudflareを使ったサイトの保護で「Turnstile」と「Managed Challenge」という2つのアプローチがあります。  
 どちらもボットと人間を見分けるための機能ですが、設計思想や使いどころが異なります。  
 この記事では、サイト管理者の視点からその違いを整理します。
 
